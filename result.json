@@ -1,0 +1,617 @@
+{
+  "updated_at": "2026-10-31T06:10:28Z",
+  "tested": 40,
+  "alive": 32,
+  "source": "https://www.vpngate.net/cn/",
+  "ip_api": "https://ip.5671234.xyz/json/",
+  "results": [
+    {
+      "sstp": "sstp://vpn:vpn@public-vpn-206.opengw.net:443",
+      "host": "public-vpn-206.opengw.net:443",
+      "connect_s": 3.02,
+      "gateway_ping_ms": 9,
+      "gateway_speed_mbps": 187.84,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "219.100.37.243",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS36599",
+        "org": "SoftEther Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn591932658.opengw.net:1484",
+      "host": "vpn591932658.opengw.net:1484",
+      "connect_s": 3.53,
+      "gateway_ping_ms": 5,
+      "gateway_speed_mbps": 38.94,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "60.71.7.107",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn451071809.opengw.net:1940",
+      "host": "vpn451071809.opengw.net:1940",
+      "connect_s": 3.53,
+      "gateway_ping_ms": 8,
+      "gateway_speed_mbps": 642.21,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "180.196.98.244",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Aichi",
+        "city": "Seto",
+        "asn": "AS18126",
+        "org": "Chubu Telecommunications Co.,Inc.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn745412775.opengw.net:1955",
+      "host": "vpn745412775.opengw.net:1955",
+      "connect_s": 5.03,
+      "gateway_ping_ms": 11,
+      "gateway_speed_mbps": 0.0,
+      "gateway_country": "United States",
+      "detail": {
+        "ip": "47.159.161.160",
+        "country": "US",
+        "countryName": "United States",
+        "region": "California",
+        "city": "West Covina",
+        "asn": "AS5650",
+        "org": "Verizon Business",
+        "timezone": "America/Los_Angeles",
+        "colo": "LAX"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@public-vpn-68.opengw.net:443",
+      "host": "public-vpn-68.opengw.net:443",
+      "connect_s": 5.53,
+      "gateway_ping_ms": 8,
+      "gateway_speed_mbps": 294.23,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "219.100.37.234",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS36599",
+        "org": "SoftEther Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn889393112.opengw.net:1900",
+      "host": "vpn889393112.opengw.net:1900",
+      "connect_s": 5.53,
+      "gateway_ping_ms": 21,
+      "gateway_speed_mbps": 128.8,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "153.220.188.97",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Nishi-Tokyo-shi",
+        "asn": "AS4713",
+        "org": "Open Computer Network",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn583764032.opengw.net:1464",
+      "host": "vpn583764032.opengw.net:1464",
+      "connect_s": 6.03,
+      "gateway_ping_ms": 10,
+      "gateway_speed_mbps": 538.68,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "115.36.204.213",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Shizuoka",
+        "city": "Hamamatsu",
+        "asn": "AS18126",
+        "org": "Chubu Telecommunications Co.,Inc.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@public-vpn-257.opengw.net:443",
+      "host": "public-vpn-257.opengw.net:443",
+      "connect_s": 6.03,
+      "gateway_ping_ms": 11,
+      "gateway_speed_mbps": 820.38,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "219.100.37.245",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS36599",
+        "org": "SoftEther Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn164761694.opengw.net:1814",
+      "host": "vpn164761694.opengw.net:1814",
+      "connect_s": 6.03,
+      "gateway_ping_ms": 13,
+      "gateway_speed_mbps": 198.39,
+      "gateway_country": "Netherlands",
+      "detail": {
+        "ip": "80.115.95.115",
+        "country": "NL",
+        "countryName": "Netherlands",
+        "region": "Limburg",
+        "city": "Sittard",
+        "asn": "AS33915",
+        "org": "Ziggo Consumers",
+        "timezone": "Europe/Amsterdam",
+        "colo": "AMS"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@public-vpn-198.opengw.net:443",
+      "host": "public-vpn-198.opengw.net:443",
+      "connect_s": 6.03,
+      "gateway_ping_ms": 18,
+      "gateway_speed_mbps": 544.85,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "219.100.37.244",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS36599",
+        "org": "SoftEther Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn953025003.opengw.net:1520",
+      "host": "vpn953025003.opengw.net:1520",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 2,
+      "gateway_speed_mbps": 493.88,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "112.70.195.227",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Osaka",
+        "city": "Osaka",
+        "asn": "AS17511",
+        "org": "OPTAGE Inc.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn637706426.opengw.net:1941",
+      "host": "vpn637706426.opengw.net:1941",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 3,
+      "gateway_speed_mbps": 909.76,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "133.247.29.29",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Kanagawa",
+        "city": "Hiratsuka",
+        "asn": "AS131918",
+        "org": "SHONAN CABLE NETWORK",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn917250768.opengw.net:1275",
+      "host": "vpn917250768.opengw.net:1275",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 3,
+      "gateway_speed_mbps": 726.31,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "27.94.23.211",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Saitama",
+        "city": "Kawaguchi",
+        "asn": "AS2516",
+        "org": "KDDI CORPORATION",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn123200954.opengw.net:1945",
+      "host": "vpn123200954.opengw.net:1945",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 3,
+      "gateway_speed_mbps": 319.12,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "126.0.32.18",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn161109829.opengw.net:1305",
+      "host": "vpn161109829.opengw.net:1305",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 5,
+      "gateway_speed_mbps": 929.43,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "126.116.210.146",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Kanagawa",
+        "city": "Yokohama",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn992087813.opengw.net:1873",
+      "host": "vpn992087813.opengw.net:1873",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 7,
+      "gateway_speed_mbps": 34.69,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "153.125.29.117",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Aichi",
+        "city": "Toyohashi",
+        "asn": "AS9615",
+        "org": "TOYOHASHI CABLE NETWORK INC.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn479781942.opengw.net:1539",
+      "host": "vpn479781942.opengw.net:1539",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 8,
+      "gateway_speed_mbps": 118.21,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "126.110.76.239",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Okayama",
+        "city": "Okayama",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn501671840.opengw.net:1285",
+      "host": "vpn501671840.opengw.net:1285",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 10,
+      "gateway_speed_mbps": 29.61,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "119.83.242.105",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Ibaraki",
+        "city": "Iwase",
+        "asn": "AS10010",
+        "org": "TOKAI Communications Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn122916437.opengw.net:1558",
+      "host": "vpn122916437.opengw.net:1558",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 11,
+      "gateway_speed_mbps": 778.2,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "123.48.124.169",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Shizuoka",
+        "city": "Hamamatsu",
+        "asn": "AS18126",
+        "org": "Chubu Telecommunications Co.,Inc.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn813516587.opengw.net:1534",
+      "host": "vpn813516587.opengw.net:1534",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 12,
+      "gateway_speed_mbps": 782.12,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "123.48.124.169",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Shizuoka",
+        "city": "Hamamatsu",
+        "asn": "AS18126",
+        "org": "Chubu Telecommunications Co.,Inc.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn838701359.opengw.net:1862",
+      "host": "vpn838701359.opengw.net:1862",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 14,
+      "gateway_speed_mbps": 140.88,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "180.197.111.26",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Nagano",
+        "city": "Nagano",
+        "asn": "AS18126",
+        "org": "Chubu Telecommunications Co.,Inc.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@public-vpn-150.opengw.net:443",
+      "host": "public-vpn-150.opengw.net:443",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 17,
+      "gateway_speed_mbps": 173.97,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "219.100.37.239",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS36599",
+        "org": "SoftEther Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn832583593.opengw.net:1749",
+      "host": "vpn832583593.opengw.net:1749",
+      "connect_s": 6.04,
+      "gateway_ping_ms": 19,
+      "gateway_speed_mbps": 146.7,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "122.133.23.16",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Chiba",
+        "city": "Chiba",
+        "asn": "AS2518",
+        "org": "BIGLOBE Inc.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@public-vpn-187.opengw.net:443",
+      "host": "public-vpn-187.opengw.net:443",
+      "connect_s": 6.53,
+      "gateway_ping_ms": 13,
+      "gateway_speed_mbps": 198.09,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "219.100.37.244",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS36599",
+        "org": "SoftEther Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@public-vpn-239.opengw.net:443",
+      "host": "public-vpn-239.opengw.net:443",
+      "connect_s": 6.53,
+      "gateway_ping_ms": 13,
+      "gateway_speed_mbps": 171.28,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "219.100.37.244",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS36599",
+        "org": "SoftEther Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn587057222.opengw.net:1817",
+      "host": "vpn587057222.opengw.net:1817",
+      "connect_s": 6.54,
+      "gateway_ping_ms": 3,
+      "gateway_speed_mbps": 244.77,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "133.218.182.132",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS2497",
+        "org": "Excite Japan Co., Ltd.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn253095465.opengw.net:1675",
+      "host": "vpn253095465.opengw.net:1675",
+      "connect_s": 6.54,
+      "gateway_ping_ms": 7,
+      "gateway_speed_mbps": 458.42,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "111.97.248.208",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Ibaraki",
+        "city": "Moriya",
+        "asn": "AS2516",
+        "org": "KDDI CORPORATION",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn501734765.opengw.net:1534",
+      "host": "vpn501734765.opengw.net:1534",
+      "connect_s": 6.54,
+      "gateway_ping_ms": 11,
+      "gateway_speed_mbps": 492.75,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "218.115.106.192",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of SoftBank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn449972528.opengw.net:1917",
+      "host": "vpn449972528.opengw.net:1917",
+      "connect_s": 6.54,
+      "gateway_ping_ms": 15,
+      "gateway_speed_mbps": 553.45,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "60.71.44.227",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn873102655.opengw.net:1211",
+      "host": "vpn873102655.opengw.net:1211",
+      "connect_s": 6.54,
+      "gateway_ping_ms": 16,
+      "gateway_speed_mbps": 258.38,
+      "gateway_country": "Japan",
+      "detail": {
+        "ip": "27.138.10.139",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS9824",
+        "org": "JCOM Co., Ltd.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn748064328.opengw.net:1841",
+      "host": "vpn748064328.opengw.net:1841",
+      "connect_s": 7.04,
+      "gateway_ping_ms": 6,
+      "gateway_speed_mbps": 382.68,
+      "gateway_country": "Thailand",
+      "detail": {
+        "ip": "58.136.79.235",
+        "country": "TH",
+        "countryName": "Thailand",
+        "region": "Bangkok",
+        "city": "Bangkok",
+        "asn": "AS133481",
+        "org": "AIS Fibre",
+        "timezone": "Asia/Bangkok",
+        "colo": "BKK"
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn664218160.opengw.net:1895",
+      "host": "vpn664218160.opengw.net:1895",
+      "connect_s": 7.04,
+      "gateway_ping_ms": 12,
+      "gateway_speed_mbps": 290.36,
+      "gateway_country": "Australia",
+      "detail": {
+        "ip": "101.186.214.28",
+        "country": "AU",
+        "countryName": "Australia",
+        "region": "Victoria",
+        "city": "Melbourne",
+        "asn": "AS1221",
+        "org": "Telstra Limited",
+        "timezone": "Australia/Melbourne",
+        "colo": "MEL"
+      }
+    }
+  ]
+}
