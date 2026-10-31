@@ -88,6 +88,10 @@ def main():
         return 1
 
     servers = pool["servers"]
+    for hp, _src in targets:
+        if hp not in servers:
+            servers[hp] = {"sstp": f"sstp://vpn:vpn@{hp}", "last_seen": "",
+                           "ok_count": 0, "fail_count": 0, "last_checked": None, "last_ok": None}
     touched = {}
     results = []
     for i, (hp, src) in enumerate(targets, 1):
@@ -108,7 +112,8 @@ def main():
         else:
             rec["fail_count"] = int(rec.get("fail_count") or 0) + 1
         servers[hp] = rec
-        touched[hp] = {k: rec[k] for k in ("last_checked", "last_ok", "ok_count", "fail_count")}
+        touched[hp] = {k: rec.get(k, 0 if k.endswith("count") else None)
+                           for k in ("last_checked", "last_ok", "ok_count", "fail_count")}
 
     # 打分（家宽/带宽/在线时长/延迟/稳定/负载）
     for r in results:

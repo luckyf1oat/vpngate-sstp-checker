@@ -122,6 +122,12 @@ def main():
         return 1
 
     servers = pool["servers"]
+    # 上次有效但已经不在库里的条目（库被清理过/从别处继承）先补一条最小记录，避免 KeyError
+    for hp, _src in targets:
+        if hp not in servers:
+            servers[hp] = {"sstp": f"sstp://vpn:vpn@{hp}", "first_seen": now_iso() if 'now_iso' in dir() else "",
+                           "last_seen": "", "ok_count": 0, "fail_count": 0,
+                           "last_checked": None, "last_ok": None}
     touched, results = {}, []
     t0 = time.time()
     done = 0
@@ -146,7 +152,8 @@ def main():
             else:
                 rec["fail_count"] = int(rec.get("fail_count") or 0) + 1
             servers[hp] = rec
-            touched[hp] = {k: rec[k] for k in ("last_checked", "last_ok", "ok_count", "fail_count")}
+            touched[hp] = {k: rec.get(k, 0 if k.endswith("count") else None)
+                           for k in ("last_checked", "last_ok", "ok_count", "fail_count")}
             if done % 20 == 0 or done == len(targets):
                 log(f"进度 {done}/{len(targets)}  已存活 {len(results)}  用时 {time.time()-t0:.0f}s")
 
