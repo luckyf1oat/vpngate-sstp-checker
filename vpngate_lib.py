@@ -135,24 +135,22 @@ def api_via_tunnel():
 
 
 def kill_vpn(proc):
+    """快速清理：能 TERM 就 TERM，短暂等待后直接 KILL + 删 ppp0，不空等"""
     try:
         os.killpg(os.getpgid(proc.pid), signal.SIGTERM)
     except Exception:
         pass
-    for _ in range(6):
+    for _ in range(3):
         if proc.poll() is not None:
             break
-        time.sleep(0.2)
+        time.sleep(0.15)
     try:
         os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
     except Exception:
         pass
-    run(["pkill", "-f", "sstpc"], 5)
-    for _ in range(8):
-        if not ppp0_exists():
-            return
-        time.sleep(0.25)
-    run(["ip", "link", "del", "ppp0"], 5)
+    run(["pkill", "-9", "-f", "sstpc"], 5)
+    if ppp0_exists():
+        run(["ip", "link", "del", "ppp0"], 5)
 
 
 def probe(host_port: str, idx: int, total: int, my_ip: str = ""):

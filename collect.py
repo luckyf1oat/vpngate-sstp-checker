@@ -61,6 +61,16 @@ def main():
             rec.update(country=s["country"], ping=s["ping"], speed_mbps=s["speed_mbps"],
                        sessions=s["sessions"], uptime_days=s.get("uptime_days", 0), last_seen=now)
 
+    # 清理：7 天没在官网出现、且从未成功过的死条目
+    import datetime
+    cutoff = (datetime.datetime.utcnow() - datetime.timedelta(days=7)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    pruned = 0
+    for hp in list(servers):
+        rec = servers[hp]
+        if (rec.get("last_seen") or "") < cutoff and not (rec.get("ok_count") or 0):
+            del servers[hp]
+            pruned += 1
+
     pool["updated_at"] = now
     pool["api_seen"] = len(api)
     pool["sstp_seen"] = len(ports)
@@ -74,7 +84,7 @@ def main():
 
     live = sum(1 for r in servers.values() if (r.get("last_seen") or "").startswith(now[:13]))
     lib.log(f"采集完成：本轮 API {len(api)} 台 / 页面 SSTP {len(ports)} 台；"
-            f"新增 {added}，库总 {len(servers)}（{before}→{len(servers)}），本轮在线 {live}")
+            f"新增 {added}，剔除过期 {pruned}，库总 {len(servers)}（{before}→{len(servers)}），本轮在线 {live}")
     return 0
 
 

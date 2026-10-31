@@ -2,14 +2,14 @@ name: vpngate-sstp-check
 
 on:
   schedule:
-    # 每 2 小时测一轮（整点采集后 30 分钟），3 个 runner 并行分片
+    # 每 2 小时测一轮（整点采集后 30 分钟），6 个 runner 并行分片
     - cron: "30 */2 * * *"
   workflow_dispatch:
     inputs:
       shards:
         description: "并行分片数（每个 runner 独立出口 IP，绕开按 IP 限流）"
         required: false
-        default: "3"
+        default: "6"
       max_test:
         description: "本轮最多测几台（0=全库）"
         required: false
@@ -29,16 +29,17 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        shard: [0, 1, 2]
+        shard: [0, 1, 2, 3, 4, 5]
     env:
-      SHARDS: ${{ inputs.shards || github.event.inputs.shards || '3' }}
+      SHARDS: ${{ inputs.shards || github.event.inputs.shards || '6' }}
     steps:
       - uses: actions/checkout@v4
 
       - name: 安装 sstp-client / ppp
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq sstp-client ppp curl iproute2 python3
+          # runner 自带包列表通常是新的，先直接装；失败再 update（省 10-15s）
+          sudo apt-get install -y -qq sstp-client ppp curl iproute2 python3 \
+            || (sudo apt-get update -qq && sudo apt-get install -y -qq sstp-client ppp curl iproute2 python3)
 
       - name: 加载 ppp 内核模块
         run: |
