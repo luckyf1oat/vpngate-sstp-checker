@@ -16,7 +16,9 @@ POOL_TXT = os.environ.get("POOL_TXT", "sstpall.txt")
 POOL_JSON = os.environ.get("POOL_JSON", "sstpall.json")
 OUT_TXT = os.environ.get("OUT_TXT", "result.txt")
 OUT_JSON = os.environ.get("OUT_JSON", "result.json")
-MAX_TEST = int(os.environ.get("MAX_TEST", "0"))    # 0 = 全库
+MAX_TEST = int(os.environ.get("MAX_TEST", "0"))
+STATE_OUT = os.environ.get("STATE_OUT", POOL_JSON)   # 分片时写本片状态
+SHARD = os.environ.get("SHARD", "")                  # "k/n"：多 runner 并行分片
 PRIORITY_FIRST = os.environ.get("PRIORITY_FIRST", "1") == "1"
 
 
@@ -73,12 +75,18 @@ def main():
     lib.log(f"本机出口 IP: {mip}")
 
     targets = build_targets(pool, last)
-    lib.log(f"库内 {len(pool.get('servers') or {})} 台，本轮测 {len(targets)} 台"
-            f"（上次有效 {sum(1 for _, s in targets if s == 'prev-ok')} 台优先）")
+    if SHARD:
+        k, n = (int(v) for v in SHARD.split("/"))
+        targets = targets[k::n]
+        lib.log(f"分片 {k}/{n}：库内 {len(pool.get('servers') or {})} 台，本片 {len(targets)} 台")
+    else:
+        lib.log(f"库内 {len(pool.get('servers') or {})} 台，本轮测 {len(targets)} 台"
+                f"（上次有效 {sum(1 for _, s in targets if s == 'prev-ok')} 台优先）")
     if not targets:
         return 1
 
     servers = pool["servers"]
+    touched = {}
     results = []
     for i, (hp, src) in enumerate(targets, 1):
         try:
@@ -86,7 +94,7 @@ def main():
         except Exception as e:
             lib.log(f"[{i}/{len(targets)}] {hp} 异常: {e}")
             r = None
-        rec = servers.get(hp) or {}
+        rec = dict(servers.get(hp) or {})
         rec["last_checked"] = lib.now_iso()
         rec["last_ok"] = bool(r)
         if r:
@@ -98,12 +106,17 @@ def main():
         else:
             rec["fail_count"] = int(rec.get("fail_count") or 0) + 1
         servers[hp] = rec
+        touched[hp] = {k: rec[k] for k in ("last_checked", "last_ok", "ok_count", "fail_count")}
 
     results.sort(key=lambda x: x["connect_s"])
     write_outputs(results, len(targets))
-    pool["last_check_at"] = lib.now_iso()
-    with open(POOL_JSON, "w", encoding="utf-8") as f:
-        json.dump(pool, f, ensure_ascii=False, indent=1, sort_keys=True)
+    if SHARD:
+        with open(STATE_OUT, "w", encoding="utf-8") as f:
+            json.dump({"shard": SHARD, "at": lib.now_iso(), "servers": touched}, f, ensure_ascii=False, indent=1)
+    else:
+        pool["last_check_at"] = lib.now_iso()
+        with open(STATE_OUT, "w", encoding="utf-8") as f:
+            json.dump(pool, f, ensure_ascii=False, indent=1, sort_keys=True)
     lib.log(f"完成：{len(results)}/{len(targets)} 可用（库内 {len(servers)} 台）")
     return 0 if results else 2
 
