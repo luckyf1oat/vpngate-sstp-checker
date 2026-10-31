@@ -25,7 +25,7 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -46,8 +46,8 @@ jobs:
         env:
           LIMIT: ${{ inputs.limit || github.event.inputs.limit || '100' }}
           MAX_PING: ${{ inputs.max_ping || github.event.inputs.max_ping || '400' }}
-          CONNECT_TIMEOUT: "15"
-          FETCH_TIMEOUT: "12"
+          CONNECT_TIMEOUT: "10"
+          FETCH_TIMEOUT: "8"
         run: |
           sudo env "PATH=$PATH" LIMIT="$LIMIT" MAX_PING="$MAX_PING" \
                CONNECT_TIMEOUT="$CONNECT_TIMEOUT" FETCH_TIMEOUT="$FETCH_TIMEOUT" \
