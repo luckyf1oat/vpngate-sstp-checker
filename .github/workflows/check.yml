@@ -49,7 +49,9 @@ jobs:
           CONNECT_TIMEOUT: "15"
           FETCH_TIMEOUT: "12"
         run: |
-          sudo -E env "PATH=$PATH" python3 checker.py
+          sudo env "PATH=$PATH" LIMIT="$LIMIT" MAX_PING="$MAX_PING" \
+               CONNECT_TIMEOUT="$CONNECT_TIMEOUT" FETCH_TIMEOUT="$FETCH_TIMEOUT" \
+               python3 checker.py
 
       - name: 提交结果
         run: |
