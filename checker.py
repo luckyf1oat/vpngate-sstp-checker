@@ -102,7 +102,8 @@ def parse_servers(html: str):
         seen.add(s["sstp"])
         uniq.append(s)
     uniq.sort(key=lambda s: (s["ping"], -s["speed_mbps"]))
-    return [s for s in uniq if s["ping"] <= MAX_PING][:LIMIT]
+    picked = [s for s in uniq if s["ping"] <= MAX_PING]
+    return picked if LIMIT <= 0 else picked[:LIMIT]
 
 
 def api_via_tunnel():
