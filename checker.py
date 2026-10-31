@@ -12,6 +12,8 @@
 """
 from __future__ import annotations
 
+import csv
+import io
 import json
 import os
 import re
@@ -24,6 +26,7 @@ import urllib.request
 from urllib.parse import urlparse
 
 SITE = os.environ.get("VPNGATE_URL", "https://www.vpngate.net/cn/")
+API_URL = os.environ.get("VPNGATE_API", "https://www.vpngate.net/api/iphone/")
 IPAPI = os.environ.get("IPAPI_URL", "https://ip.5671234.xyz/json/")
 LIMIT = int(os.environ.get("LIMIT", "100"))
 MAX_PING = int(os.environ.get("MAX_PING", "400"))
@@ -63,6 +66,90 @@ def ppp0_exists() -> bool:
 def ppp0_up() -> bool:
     out = run(["ip", "-4", "addr", "show", "ppp0"], 5)
     return out.returncode == 0 and "inet " in out.stdout
+
+
+def _int(v):
+    try:
+        return int(v)
+    except Exception:
+        return 0
+
+
+def fetch_api_list():
+    """官方 CSV API：服务器清单 + ping/speed/国家/会话数（CSV 里没有 SSTP 字段）"""
+    raw = http_get(API_URL, 30)
+    lines = [l for l in raw.splitlines() if l and not l.startswith("*")]
+    if not lines:
+        return []
+    lines[0] = lines[0].lstrip("#")
+    out = []
+    for r in csv.DictReader(io.StringIO("\n".join(lines))):
+        host = (r.get("HostName") or "").strip()
+        ip = (r.get("IP") or "").strip()
+        if not host or not ip:
+            continue
+        out.append({
+            "host": host,
+            "ip": ip,
+            "country": (r.get("CountryLong") or "").strip(),
+            "ping": _int(r.get("Ping")) or 9999,
+            "speed_mbps": round(_int(r.get("Speed")) * 8 / 1e6, 2),
+            "sessions": _int(r.get("NumVpnSessions")),
+        })
+    return out
+
+
+def fetch_sstp_ports():
+    """列表页：host -> SSTP 端口。这是 API 里唯一缺的字段。
+
+    注意：不能用 OpenVPN 配置里的 `remote <ip> <port>` 推 SSTP 端口——
+    实测两者并不总相等（例：vpn805893912 配置里是 995，SSTP 实际不通），
+    所以端口必须以页面上的 `SSTP 主机名:端口` 为准。
+    """
+    html = http_get(SITE, 30)
+    ports = {}
+    for row in re.findall(r"<tr[^>]*>.*?</tr>", html, re.S | re.I):
+        if ".opengw.net" not in row:
+            continue
+        text = re.sub(r"<[^>]+>", "|", row)
+        text = re.sub(r"&nbsp;?", " ", text)
+        hosts = re.findall(r"([A-Za-z0-9][A-Za-z0-9.\-]*\.opengw\.net)", text)
+        if not hosts:
+            continue
+        name = hosts[0].split(".")[0]
+        if name in ports:
+            continue
+        m = re.search(r"SSTP\s*主机名\s*:?\s*\|+\s*([A-Za-z0-9.\-]+\.opengw\.net)(?::(\d{1,5}))?", text)
+        if m:
+            ports[name] = int(m.group(2)) if m.group(2) else 443
+    return ports
+
+
+def fetch_servers():
+    """API 清单（权威+带元数据）∩ 页面 SSTP 端口表（补端口）"""
+    api = fetch_api_list()
+    log(f"API 清单 {len(api)} 台")
+    ports = {}
+    try:
+        ports = fetch_sstp_ports()
+        log(f"页面 SSTP 端口表 {len(ports)} 台")
+    except Exception as e:
+        log(f"页面取 SSTP 端口失败，退回 443 盲测: {e}")
+
+    servers = []
+    for s in api:
+        name = s["host"]
+        if ports:
+            if name not in ports:
+                continue          # 页面没标 SSTP ⇒ 这台不支持，跳过
+            port = ports[name]
+        else:
+            port = 443
+        servers.append({**s, "sstp": f"{name}.opengw.net:{port}"})
+
+    servers.sort(key=lambda x: (x["ping"], -x["speed_mbps"]))
+    servers = [s for s in servers if s["ping"] <= MAX_PING]
+    return servers if LIMIT <= 0 else servers[:LIMIT]
 
 
 def parse_servers(html: str):
@@ -239,12 +326,10 @@ def main():
     except Exception as e:
         MY_IP = ""
         log(f"取本机出口 IP 失败（不阻断）: {e}")
-    log(f"抓列表 {SITE}")
-    html = http_get(SITE, 30)
-    servers = parse_servers(html)
-    log(f"解析到 {len(servers)} 台支持 SSTP 的服务器")
+    servers = fetch_servers()
+    log(f"待测 {len(servers)} 台（端口取自列表页 SSTP 主机名）")
     if not servers:
-        log("没解析到服务器，页面结构可能变了")
+        log("没拿到可测服务器（API 或页面结构可能变了）")
         return 1
 
     results = []

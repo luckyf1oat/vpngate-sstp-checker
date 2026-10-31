@@ -25,13 +25,15 @@ sstp://vpn:vpn@vpn475501975.opengw.net:1462  {"ip":"219.28.138.78","country":"JP
 
 ## 怎么做的
 
-1. 抓列表页，从每行 HTML 里解析国家 / DDNS 主机 / ping / 带宽 / 会话数 / **SSTP 主机名（可能带非 443 端口）**。
-2. 按 ping 升序、带宽降序取前 `LIMIT` 台。
-3. 对每台：`sstpc --user vpn --password vpn --cert-warn host:port -- noauth nodetach noipdefault mtu 1400 ...`
+1. **先用官方 API** `https://www.vpngate.net/api/iphone/` 取服务器清单（CSV：HostName / IP / Ping / Speed / 国家 / 会话数）。
+2. 再抓一次列表页，只补 API 里缺的那个字段 —— 每台的 **`SSTP 主机名:端口`**（SSTP 端口常不是 443，如 :995 / :1773 / :1822）。
+3. 两边取交集：只测"API 里有 + 页面标了 SSTP"的主机。
+4. 按 ping 升序、带宽降序取前 `LIMIT` 台。
+5. 对每台：`sstpc --user vpn --password vpn --cert-warn host:port -- noauth nodetach noipdefault mtu 1400 ...`
    - 轮询 `ppp0` 是否拿到 inet，最多 `CONNECT_TIMEOUT` 秒
    - 起来后**只给 ip.5671234.xyz 的 A 记录加 /32 路由走 ppp0**，`curl --resolve` 拿 JSON
    - 立刻删路由、结束 sstpc，确保 `ppp0` 消失再测下一台
-4. 结果边测边写（中途挂掉也留得住）。
+6. 结果边测边写（中途挂掉也留得住）。
 
 ## 安全设计（重要）
 
@@ -59,6 +61,13 @@ LIMIT=5 sudo -E env "PATH=$PATH" python3 checker.py
 | `VPNGATE_URL` | `https://www.vpngate.net/cn/` | 列表页 |
 | `IPAPI_URL` | `https://ip.5671234.xyz/json/` | 出口 IP 详情接口 |
 | `ALLOW_EXISTING_PPP0` | 0 | 已存在 ppp0 时是否硬跑 |
+
+## 为什么不能只用 API
+
+`api/iphone/` 的 CSV 里**没有 SSTP 字段、也没有 SSTP 端口**，它只给 OpenVPN 配置。
+试过从 OpenVPN 配置里的 `remote <ip> <port>` 推 SSTP 端口——**不可靠**：
+`vpn805893912` 配置里是 995、页面 SSTP 也是 995，但同类服务器里有连不上的；
+换个思路直接拿页面上的 `SSTP 主机名:端口` 才准。所以是「API 出清单 + 页面补端口」。
 
 ## 已知限制
 
