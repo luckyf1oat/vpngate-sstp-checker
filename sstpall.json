@@ -1,19 +1,34 @@
 {
- "api_seen": 98,
+ "api_seen": 99,
  "last_check_at": "2026-10-31T07:55:21Z",
  "servers": {
   "laud.opengw.net:443": {
    "country": "Japan",
    "fail_count": 0,
-   "first_seen": "2026-10-31T07:07:34Z",
-   "last_checked": "2026-10-31T07:51:52Z",
-   "last_ok": true,
-   "last_seen": "2026-10-31T07:07:34Z",
-   "ok_count": 2,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
    "ping": 12,
-   "sessions": 113,
+   "sessions": 111,
    "speed_mbps": 730.24,
-   "sstp": "sstp://vpn:vpn@laud.opengw.net:443"
+   "sstp": "sstp://vpn:vpn@laud.opengw.net:443",
+   "uptime_days": 5.8
+  },
+  "opengw.opengw.net:443": {
+   "country": "Romania",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 4,
+   "sessions": 126,
+   "speed_mbps": 3657.58,
+   "sstp": "sstp://vpn:vpn@opengw.opengw.net:443",
+   "uptime_days": 5.66
   },
   "public-vpn-0.opengw.net:443": {
    "country": "Japan",
@@ -47,13 +62,13 @@
    "first_seen": "2026-10-31T07:56:05Z",
    "last_checked": null,
    "last_ok": null,
-   "last_seen": "2026-10-31T07:56:05Z",
+   "last_seen": "2026-10-31T07:57:17Z",
    "ok_count": 0,
    "ping": 11,
-   "sessions": 40,
+   "sessions": 44,
    "speed_mbps": 1316.15,
    "sstp": "sstp://vpn:vpn@public-vpn-104.opengw.net:443",
-   "uptime_days": 7.03
+   "uptime_days": 7.02
   },
   "public-vpn-108.opengw.net:443": {
    "country": "Japan",
@@ -137,6 +152,20 @@
    "sstp": "sstp://vpn:vpn@public-vpn-129.opengw.net:443",
    "uptime_days": 7.03
   },
+  "public-vpn-131.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 17,
+   "sessions": 106,
+   "speed_mbps": 1611.59,
+   "sstp": "sstp://vpn:vpn@public-vpn-131.opengw.net:443",
+   "uptime_days": 7.02
+  },
   "public-vpn-136.opengw.net:443": {
    "country": "Japan",
    "fail_count": 0,
@@ -151,19 +180,47 @@
    "sstp": "sstp://vpn:vpn@public-vpn-136.opengw.net:443",
    "uptime_days": 7.03
   },
+  "public-vpn-139.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 16,
+   "sessions": 51,
+   "speed_mbps": 1277.35,
+   "sstp": "sstp://vpn:vpn@public-vpn-139.opengw.net:443",
+   "uptime_days": 7.02
+  },
   "public-vpn-145.opengw.net:443": {
    "country": "Japan",
    "fail_count": 0,
    "first_seen": "2026-10-31T07:56:05Z",
    "last_checked": null,
    "last_ok": null,
-   "last_seen": "2026-10-31T07:56:05Z",
+   "last_seen": "2026-10-31T07:57:17Z",
    "ok_count": 0,
    "ping": 21,
-   "sessions": 61,
+   "sessions": 67,
    "speed_mbps": 1946.2,
    "sstp": "sstp://vpn:vpn@public-vpn-145.opengw.net:443",
-   "uptime_days": 7.03
+   "uptime_days": 7.02
+  },
+  "public-vpn-146.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 23,
+   "sessions": 84,
+   "speed_mbps": 1390.39,
+   "sstp": "sstp://vpn:vpn@public-vpn-146.opengw.net:443",
+   "uptime_days": 7.02
   },
   "public-vpn-148.opengw.net:443": {
    "country": "Japan",
@@ -191,6 +248,20 @@
    "speed_mbps": 1496.32,
    "sstp": "sstp://vpn:vpn@public-vpn-151.opengw.net:443",
    "uptime_days": 7.03
+  },
+  "public-vpn-155.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 14,
+   "sessions": 67,
+   "speed_mbps": 1445.42,
+   "sstp": "sstp://vpn:vpn@public-vpn-155.opengw.net:443",
+   "uptime_days": 7.02
   },
   "public-vpn-156.opengw.net:443": {
    "country": "Japan",
@@ -225,12 +296,27 @@
    "first_seen": "2026-10-31T07:07:34Z",
    "last_checked": "2026-10-31T07:51:52Z",
    "last_ok": true,
-   "last_seen": "2026-10-31T07:07:34Z",
+   "last_seen": "2026-10-31T07:57:17Z",
    "ok_count": 1,
-   "ping": 12,
-   "sessions": 71,
-   "speed_mbps": 1525.69,
-   "sstp": "sstp://vpn:vpn@public-vpn-161.opengw.net:443"
+   "ping": 10,
+   "sessions": 85,
+   "speed_mbps": 1216.43,
+   "sstp": "sstp://vpn:vpn@public-vpn-161.opengw.net:443",
+   "uptime_days": 7.02
+  },
+  "public-vpn-163.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 9,
+   "sessions": 117,
+   "speed_mbps": 1334.86,
+   "sstp": "sstp://vpn:vpn@public-vpn-163.opengw.net:443",
+   "uptime_days": 7.02
   },
   "public-vpn-184.opengw.net:443": {
    "country": "Japan",
@@ -244,6 +330,20 @@
    "sessions": 110,
    "speed_mbps": 2303.87,
    "sstp": "sstp://vpn:vpn@public-vpn-184.opengw.net:443"
+  },
+  "public-vpn-187.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 18,
+   "sessions": 86,
+   "speed_mbps": 1657.19,
+   "sstp": "sstp://vpn:vpn@public-vpn-187.opengw.net:443",
+   "uptime_days": 7.02
   },
   "public-vpn-189.opengw.net:443": {
    "country": "Japan",
@@ -284,6 +384,20 @@
    "speed_mbps": 1286.5,
    "sstp": "sstp://vpn:vpn@public-vpn-201.opengw.net:443"
   },
+  "public-vpn-205.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 30,
+   "sessions": 75,
+   "speed_mbps": 1430.95,
+   "sstp": "sstp://vpn:vpn@public-vpn-205.opengw.net:443",
+   "uptime_days": 7.02
+  },
   "public-vpn-214.opengw.net:443": {
    "country": "Japan",
    "fail_count": 0,
@@ -297,6 +411,20 @@
    "speed_mbps": 1547.94,
    "sstp": "sstp://vpn:vpn@public-vpn-214.opengw.net:443"
   },
+  "public-vpn-215.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 12,
+   "sessions": 53,
+   "speed_mbps": 1471.38,
+   "sstp": "sstp://vpn:vpn@public-vpn-215.opengw.net:443",
+   "uptime_days": 7.02
+  },
   "public-vpn-217.opengw.net:443": {
    "country": "Japan",
    "fail_count": 0,
@@ -309,6 +437,20 @@
    "sessions": 99,
    "speed_mbps": 1269.71,
    "sstp": "sstp://vpn:vpn@public-vpn-217.opengw.net:443"
+  },
+  "public-vpn-219.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 11,
+   "sessions": 205,
+   "speed_mbps": 1781.55,
+   "sstp": "sstp://vpn:vpn@public-vpn-219.opengw.net:443",
+   "uptime_days": 7.02
   },
   "public-vpn-224.opengw.net:443": {
    "country": "Japan",
@@ -396,13 +538,13 @@
    "first_seen": "2026-10-31T07:56:05Z",
    "last_checked": null,
    "last_ok": null,
-   "last_seen": "2026-10-31T07:56:05Z",
+   "last_seen": "2026-10-31T07:57:17Z",
    "ok_count": 0,
    "ping": 11,
-   "sessions": 76,
+   "sessions": 73,
    "speed_mbps": 2299.74,
    "sstp": "sstp://vpn:vpn@public-vpn-238.opengw.net:443",
-   "uptime_days": 7.03
+   "uptime_days": 7.02
   },
   "public-vpn-239.opengw.net:443": {
    "country": "Japan",
@@ -417,6 +559,20 @@
    "speed_mbps": 1291.57,
    "sstp": "sstp://vpn:vpn@public-vpn-239.opengw.net:443",
    "uptime_days": 7.03
+  },
+  "public-vpn-241.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 25,
+   "sessions": 67,
+   "speed_mbps": 1585.81,
+   "sstp": "sstp://vpn:vpn@public-vpn-241.opengw.net:443",
+   "uptime_days": 7.02
   },
   "public-vpn-251.opengw.net:443": {
    "country": "Japan",
@@ -445,6 +601,20 @@
    "speed_mbps": 1730.36,
    "sstp": "sstp://vpn:vpn@public-vpn-255.opengw.net:443",
    "uptime_days": 7.03
+  },
+  "public-vpn-258.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 20,
+   "sessions": 77,
+   "speed_mbps": 1346.58,
+   "sstp": "sstp://vpn:vpn@public-vpn-258.opengw.net:443",
+   "uptime_days": 7.02
   },
   "public-vpn-261.opengw.net:443": {
    "country": "Japan",
@@ -493,13 +663,13 @@
    "first_seen": "2026-10-31T07:56:05Z",
    "last_checked": null,
    "last_ok": null,
-   "last_seen": "2026-10-31T07:56:05Z",
+   "last_seen": "2026-10-31T07:57:17Z",
    "ok_count": 0,
    "ping": 17,
-   "sessions": 84,
+   "sessions": 83,
    "speed_mbps": 1416.66,
    "sstp": "sstp://vpn:vpn@public-vpn-40.opengw.net:443",
-   "uptime_days": 7.03
+   "uptime_days": 7.02
   },
   "public-vpn-42.opengw.net:443": {
    "country": "Japan",
@@ -554,6 +724,20 @@
    "speed_mbps": 1656.24,
    "sstp": "sstp://vpn:vpn@public-vpn-51.opengw.net:443"
   },
+  "public-vpn-55.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 19,
+   "sessions": 95,
+   "speed_mbps": 1669.15,
+   "sstp": "sstp://vpn:vpn@public-vpn-55.opengw.net:443",
+   "uptime_days": 7.02
+  },
   "public-vpn-68.opengw.net:443": {
    "country": "Japan",
    "fail_count": 0,
@@ -567,6 +751,48 @@
    "speed_mbps": 2353.8,
    "sstp": "sstp://vpn:vpn@public-vpn-68.opengw.net:443"
   },
+  "public-vpn-72.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 21,
+   "sessions": 150,
+   "speed_mbps": 1377.22,
+   "sstp": "sstp://vpn:vpn@public-vpn-72.opengw.net:443",
+   "uptime_days": 7.02
+  },
+  "public-vpn-78.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 25,
+   "sessions": 140,
+   "speed_mbps": 1903.8,
+   "sstp": "sstp://vpn:vpn@public-vpn-78.opengw.net:443",
+   "uptime_days": 7.02
+  },
+  "public-vpn-79.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 26,
+   "sessions": 58,
+   "speed_mbps": 1309.38,
+   "sstp": "sstp://vpn:vpn@public-vpn-79.opengw.net:443",
+   "uptime_days": 7.02
+  },
   "public-vpn-84.opengw.net:443": {
    "country": "Japan",
    "fail_count": 0,
@@ -579,6 +805,20 @@
    "sessions": 71,
    "speed_mbps": 1758.7,
    "sstp": "sstp://vpn:vpn@public-vpn-84.opengw.net:443"
+  },
+  "public-vpn-90.opengw.net:443": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 8,
+   "sessions": 181,
+   "speed_mbps": 1615.28,
+   "sstp": "sstp://vpn:vpn@public-vpn-90.opengw.net:443",
+   "uptime_days": 7.02
   },
   "public-vpn-94.opengw.net:443": {
    "country": "Japan",
@@ -698,6 +938,20 @@
    "speed_mbps": 758.76,
    "sstp": "sstp://vpn:vpn@vpn111698412.opengw.net:1743"
   },
+  "vpn123200954.opengw.net:1945": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 3,
+   "sessions": 37,
+   "speed_mbps": 3094.41,
+   "sstp": "sstp://vpn:vpn@vpn123200954.opengw.net:1945",
+   "uptime_days": 0.0
+  },
   "vpn124650850.opengw.net:1577": {
    "country": "Japan",
    "fail_count": 0,
@@ -713,17 +967,18 @@
    "uptime_days": 0.44
   },
   "vpn124826882.opengw.net:995": {
-   "country": "Russian Federation",
+   "country": "United States",
    "fail_count": 2,
    "first_seen": "2026-10-31T07:06:29Z",
    "last_checked": "2026-10-31T07:52:39Z",
    "last_ok": false,
-   "last_seen": "2026-10-31T07:06:29Z",
+   "last_seen": "2026-10-31T07:57:17Z",
    "ok_count": 0,
    "ping": 43,
    "sessions": 0,
    "speed_mbps": 475.28,
-   "sstp": "sstp://vpn:vpn@vpn124826882.opengw.net:995"
+   "sstp": "sstp://vpn:vpn@vpn124826882.opengw.net:995",
+   "uptime_days": 0.44
   },
   "vpn126930009.opengw.net:1337": {
    "country": "Japan",
@@ -793,6 +1048,20 @@
    "sstp": "sstp://vpn:vpn@vpn132627977.opengw.net:995",
    "uptime_days": 0.0
   },
+  "vpn133692637.opengw.net:1451": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 2,
+   "sessions": 66,
+   "speed_mbps": 7833.49,
+   "sstp": "sstp://vpn:vpn@vpn133692637.opengw.net:1451",
+   "uptime_days": 0.44
+  },
   "vpn143703231.opengw.net:1372": {
    "country": "Japan",
    "fail_count": 0,
@@ -805,6 +1074,20 @@
    "sessions": 54,
    "speed_mbps": 4777.29,
    "sstp": "sstp://vpn:vpn@vpn143703231.opengw.net:1372"
+  },
+  "vpn144022603.opengw.net:1959": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 12,
+   "sessions": 42,
+   "speed_mbps": 6609.32,
+   "sstp": "sstp://vpn:vpn@vpn144022603.opengw.net:1959",
+   "uptime_days": 0.0
   },
   "vpn146757892.opengw.net:1322": {
    "country": "Japan",
@@ -877,7 +1160,7 @@
    "first_seen": "2026-10-31T07:06:29Z",
    "last_checked": "2026-10-31T07:52:47Z",
    "last_ok": true,
-   "last_seen": "2026-10-31T07:56:05Z",
+   "last_seen": "2026-10-31T07:57:17Z",
    "ok_count": 2,
    "ping": 4,
    "sessions": 14,
@@ -910,6 +1193,20 @@
    "sessions": 0,
    "speed_mbps": 654.17,
    "sstp": "sstp://vpn:vpn@vpn177976718.opengw.net:1280"
+  },
+  "vpn184169581.opengw.net:1713": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 56,
+   "sessions": 36,
+   "speed_mbps": 5187.65,
+   "sstp": "sstp://vpn:vpn@vpn184169581.opengw.net:1713",
+   "uptime_days": 1.61
   },
   "vpn188811855.opengw.net:1891": {
    "country": "Japan",
@@ -965,6 +1262,20 @@
    "sstp": "sstp://vpn:vpn@vpn192397778.opengw.net:995",
    "uptime_days": 39.7
   },
+  "vpn193301195.opengw.net:995": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 41,
+   "sessions": 67,
+   "speed_mbps": 6068.03,
+   "sstp": "sstp://vpn:vpn@vpn193301195.opengw.net:995",
+   "uptime_days": 2.53
+  },
   "vpn195786351.opengw.net:1629": {
    "country": "Japan",
    "fail_count": 0,
@@ -977,6 +1288,20 @@
    "sessions": 10,
    "speed_mbps": 663.8,
    "sstp": "sstp://vpn:vpn@vpn195786351.opengw.net:1629"
+  },
+  "vpn196131915.opengw.net:995": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 40,
+   "sessions": 12,
+   "speed_mbps": 1166.43,
+   "sstp": "sstp://vpn:vpn@vpn196131915.opengw.net:995",
+   "uptime_days": 0.0
   },
   "vpn196555866.opengw.net:1764": {
    "country": "Japan",
@@ -1124,6 +1449,20 @@
    "speed_mbps": 6251.44,
    "sstp": "sstp://vpn:vpn@vpn244638209.opengw.net:1942"
   },
+  "vpn245204935.opengw.net:1550": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 10,
+   "sessions": 0,
+   "speed_mbps": 772.33,
+   "sstp": "sstp://vpn:vpn@vpn245204935.opengw.net:1550",
+   "uptime_days": 0.44
+  },
   "vpn248153573.opengw.net:1581": {
    "country": "Japan",
    "fail_count": 0,
@@ -1151,6 +1490,20 @@
    "speed_mbps": 3796.25,
    "sstp": "sstp://vpn:vpn@vpn250920860.opengw.net:1895",
    "uptime_days": 20.85
+  },
+  "vpn251678351.opengw.net:995": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 30,
+   "sessions": 11,
+   "speed_mbps": 734.69,
+   "sstp": "sstp://vpn:vpn@vpn251678351.opengw.net:995",
+   "uptime_days": 0.0
   },
   "vpn252703156.opengw.net:1734": {
    "country": "Japan",
@@ -1193,6 +1546,20 @@
    "speed_mbps": 4283.85,
    "sstp": "sstp://vpn:vpn@vpn255867577.opengw.net:1234"
   },
+  "vpn257585010.opengw.net:1599": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 11,
+   "sessions": 4,
+   "speed_mbps": 654.69,
+   "sstp": "sstp://vpn:vpn@vpn257585010.opengw.net:1599",
+   "uptime_days": 0.0
+  },
   "vpn258254532.opengw.net:1548": {
    "country": "Japan",
    "fail_count": 0,
@@ -1206,6 +1573,20 @@
    "speed_mbps": 754.14,
    "sstp": "sstp://vpn:vpn@vpn258254532.opengw.net:1548"
   },
+  "vpn260016517.opengw.net:1295": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 27,
+   "sessions": 40,
+   "speed_mbps": 434.41,
+   "sstp": "sstp://vpn:vpn@vpn260016517.opengw.net:1295",
+   "uptime_days": 2.69
+  },
   "vpn269589023.opengw.net:1709": {
    "country": "Philippines",
    "fail_count": 0,
@@ -1218,6 +1599,20 @@
    "sessions": 43,
    "speed_mbps": 421.73,
    "sstp": "sstp://vpn:vpn@vpn269589023.opengw.net:1709",
+   "uptime_days": 0.0
+  },
+  "vpn273687459.opengw.net:1510": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 9,
+   "sessions": 4,
+   "speed_mbps": 776.98,
+   "sstp": "sstp://vpn:vpn@vpn273687459.opengw.net:1510",
    "uptime_days": 0.0
   },
   "vpn283661088.opengw.net:1932": {
@@ -1314,6 +1709,20 @@
    "sstp": "sstp://vpn:vpn@vpn305114740.opengw.net:995",
    "uptime_days": 89.9
   },
+  "vpn311787559.opengw.net:1249": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 33,
+   "sessions": 66,
+   "speed_mbps": 460.5,
+   "sstp": "sstp://vpn:vpn@vpn311787559.opengw.net:1249",
+   "uptime_days": 14.69
+  },
   "vpn317211036.opengw.net:1460": {
    "country": "Viet Nam",
    "fail_count": 0,
@@ -1328,6 +1737,20 @@
    "sstp": "sstp://vpn:vpn@vpn317211036.opengw.net:1460",
    "uptime_days": 0.0
   },
+  "vpn320086889.opengw.net:1886": {
+   "country": "Canada",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 4,
+   "sessions": 122,
+   "speed_mbps": 2032.38,
+   "sstp": "sstp://vpn:vpn@vpn320086889.opengw.net:1886",
+   "uptime_days": 2.69
+  },
   "vpn327787550.opengw.net:1884": {
    "country": "Japan",
    "fail_count": 0,
@@ -1340,6 +1763,20 @@
    "sessions": 23,
    "speed_mbps": 4388.57,
    "sstp": "sstp://vpn:vpn@vpn327787550.opengw.net:1884"
+  },
+  "vpn329987705.opengw.net:1483": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 3,
+   "sessions": 29,
+   "speed_mbps": 6100.84,
+   "sstp": "sstp://vpn:vpn@vpn329987705.opengw.net:1483",
+   "uptime_days": 0.0
   },
   "vpn333824249.opengw.net:995": {
    "country": "Korea Republic of",
@@ -1355,6 +1792,20 @@
    "sstp": "sstp://vpn:vpn@vpn333824249.opengw.net:995",
    "uptime_days": 0.44
   },
+  "vpn337896544.opengw.net:1992": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 29,
+   "sessions": 9,
+   "speed_mbps": 3911.7,
+   "sstp": "sstp://vpn:vpn@vpn337896544.opengw.net:1992",
+   "uptime_days": 0.0
+  },
   "vpn341413712.opengw.net:1809": {
    "country": "Japan",
    "fail_count": 2,
@@ -1367,6 +1818,20 @@
    "sessions": 15,
    "speed_mbps": 7014.11,
    "sstp": "sstp://vpn:vpn@vpn341413712.opengw.net:1809"
+  },
+  "vpn345560266.opengw.net:1440": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 5,
+   "sessions": 73,
+   "speed_mbps": 512.45,
+   "sstp": "sstp://vpn:vpn@vpn345560266.opengw.net:1440",
+   "uptime_days": 9.71
   },
   "vpn350782353.opengw.net:1962": {
    "country": "Japan",
@@ -1420,6 +1885,34 @@
    "sessions": 81,
    "speed_mbps": 1399.15,
    "sstp": "sstp://vpn:vpn@vpn364956440.opengw.net:1496"
+  },
+  "vpn365193418.opengw.net:995": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 34,
+   "sessions": 7,
+   "speed_mbps": 648.34,
+   "sstp": "sstp://vpn:vpn@vpn365193418.opengw.net:995",
+   "uptime_days": 0.0
+  },
+  "vpn367205720.opengw.net:1642": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 7,
+   "sessions": 2,
+   "speed_mbps": 1761.44,
+   "sstp": "sstp://vpn:vpn@vpn367205720.opengw.net:1642",
+   "uptime_days": 0.0
   },
   "vpn376690928.opengw.net:1425": {
    "country": "Japan",
@@ -1487,6 +1980,20 @@
    "speed_mbps": 498.43,
    "sstp": "sstp://vpn:vpn@vpn393914289.opengw.net:1346"
   },
+  "vpn398338983.opengw.net:995": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 31,
+   "sessions": 21,
+   "speed_mbps": 7027.15,
+   "sstp": "sstp://vpn:vpn@vpn398338983.opengw.net:995",
+   "uptime_days": 0.44
+  },
   "vpn398736484.opengw.net:1723": {
    "country": "Italy",
    "fail_count": 0,
@@ -1499,6 +2006,34 @@
    "sessions": 29,
    "speed_mbps": 69.58,
    "sstp": "sstp://vpn:vpn@vpn398736484.opengw.net:1723"
+  },
+  "vpn400598896.opengw.net:1250": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 43,
+   "sessions": 71,
+   "speed_mbps": 3287.51,
+   "sstp": "sstp://vpn:vpn@vpn400598896.opengw.net:1250",
+   "uptime_days": 14.69
+  },
+  "vpn408668053.opengw.net:1652": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 20,
+   "sessions": 5,
+   "speed_mbps": 557.69,
+   "sstp": "sstp://vpn:vpn@vpn408668053.opengw.net:1652",
+   "uptime_days": 0.0
   },
   "vpn410287983.opengw.net:995": {
    "country": "Viet Nam",
@@ -1525,6 +2060,20 @@
    "sessions": 45,
    "speed_mbps": 605.58,
    "sstp": "sstp://vpn:vpn@vpn414350235.opengw.net:1446"
+  },
+  "vpn425038562.opengw.net:1912": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 31,
+   "sessions": 2,
+   "speed_mbps": 436.83,
+   "sstp": "sstp://vpn:vpn@vpn425038562.opengw.net:1912",
+   "uptime_days": 0.0
   },
   "vpn432636439.opengw.net:1858": {
    "country": "Russian Federation",
@@ -1553,6 +2102,34 @@
    "sstp": "sstp://vpn:vpn@vpn434117392.opengw.net:1845",
    "uptime_days": 4.71
   },
+  "vpn435394266.opengw.net:1495": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 2,
+   "sessions": 55,
+   "speed_mbps": 4131.56,
+   "sstp": "sstp://vpn:vpn@vpn435394266.opengw.net:1495",
+   "uptime_days": 0.44
+  },
+  "vpn435786031.opengw.net:1227": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 37,
+   "sessions": 14,
+   "speed_mbps": 322.43,
+   "sstp": "sstp://vpn:vpn@vpn435786031.opengw.net:1227",
+   "uptime_days": 0.65
+  },
   "vpn441877979.opengw.net:1428": {
    "country": "Japan",
    "fail_count": 2,
@@ -1580,6 +2157,20 @@
    "sstp": "sstp://vpn:vpn@vpn446279611.opengw.net:1779",
    "uptime_days": 0.65
   },
+  "vpn449972528.opengw.net:1917": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 15,
+   "sessions": 15,
+   "speed_mbps": 3620.55,
+   "sstp": "sstp://vpn:vpn@vpn449972528.opengw.net:1917",
+   "uptime_days": 0.0
+  },
   "vpn454753645.opengw.net:1838": {
    "country": "Saudi Arabia",
    "fail_count": 0,
@@ -1606,6 +2197,20 @@
    "speed_mbps": 1633.11,
    "sstp": "sstp://vpn:vpn@vpn459519869.opengw.net:1430",
    "uptime_days": 0.0
+  },
+  "vpn459624604.opengw.net:995": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 28,
+   "sessions": 51,
+   "speed_mbps": 49.65,
+   "sstp": "sstp://vpn:vpn@vpn459624604.opengw.net:995",
+   "uptime_days": 34.88
   },
   "vpn461782020.opengw.net:995": {
    "country": "Korea Republic of",
@@ -1646,6 +2251,34 @@
    "sessions": 27,
    "speed_mbps": 4465.78,
    "sstp": "sstp://vpn:vpn@vpn466639974.opengw.net:1659"
+  },
+  "vpn468282901.opengw.net:1508": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 31,
+   "sessions": 17,
+   "speed_mbps": 897.44,
+   "sstp": "sstp://vpn:vpn@vpn468282901.opengw.net:1508",
+   "uptime_days": 1.61
+  },
+  "vpn469699740.opengw.net:1702": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 33,
+   "sessions": 1,
+   "speed_mbps": 1953.32,
+   "sstp": "sstp://vpn:vpn@vpn469699740.opengw.net:1702",
+   "uptime_days": 0.0
   },
   "vpn473388778.opengw.net:1889": {
    "country": "Japan",
@@ -1779,6 +2412,20 @@
    "speed_mbps": 736.02,
    "sstp": "sstp://vpn:vpn@vpn514496438.opengw.net:995"
   },
+  "vpn516659156.opengw.net:995": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 27,
+   "sessions": 6,
+   "speed_mbps": 3051.93,
+   "sstp": "sstp://vpn:vpn@vpn516659156.opengw.net:995",
+   "uptime_days": 3.57
+  },
   "vpn524865191.opengw.net:1932": {
    "country": "Japan",
    "fail_count": 0,
@@ -1831,6 +2478,20 @@
    "sessions": 4,
    "speed_mbps": 5366.08,
    "sstp": "sstp://vpn:vpn@vpn531651322.opengw.net:995"
+  },
+  "vpn532160734.opengw.net:1327": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 6,
+   "sessions": 7,
+   "speed_mbps": 703.94,
+   "sstp": "sstp://vpn:vpn@vpn532160734.opengw.net:1327",
+   "uptime_days": 0.44
   },
   "vpn540491747.opengw.net:1811": {
    "country": "Japan",
@@ -1984,12 +2645,13 @@
    "first_seen": "2026-10-31T07:06:29Z",
    "last_checked": "2026-10-31T07:55:09Z",
    "last_ok": true,
-   "last_seen": "2026-10-31T07:06:29Z",
+   "last_seen": "2026-10-31T07:57:17Z",
    "ok_count": 3,
    "ping": 2,
-   "sessions": 74,
+   "sessions": 66,
    "speed_mbps": 590.72,
-   "sstp": "sstp://vpn:vpn@vpn584377130.opengw.net:1822"
+   "sstp": "sstp://vpn:vpn@vpn584377130.opengw.net:1822",
+   "uptime_days": 5.66
   },
   "vpn585007031.opengw.net:1909": {
    "country": "Korea Republic of",
@@ -2045,6 +2707,20 @@
    "sstp": "sstp://vpn:vpn@vpn590418613.opengw.net:995",
    "uptime_days": 0.44
   },
+  "vpn595249968.opengw.net:1647": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 25,
+   "sessions": 20,
+   "speed_mbps": 2143.34,
+   "sstp": "sstp://vpn:vpn@vpn595249968.opengw.net:1647",
+   "uptime_days": 0.44
+  },
   "vpn596745634.opengw.net:1322": {
    "country": "Japan",
    "fail_count": 0,
@@ -2086,6 +2762,20 @@
    "sstp": "sstp://vpn:vpn@vpn601425201.opengw.net:1252",
    "uptime_days": 7.48
   },
+  "vpn602098046.opengw.net:995": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 9999,
+   "sessions": 0,
+   "speed_mbps": 2418.64,
+   "sstp": "sstp://vpn:vpn@vpn602098046.opengw.net:995",
+   "uptime_days": 1.61
+  },
   "vpn605858216.opengw.net:1569": {
    "country": "Russian Federation",
    "fail_count": 0,
@@ -2119,13 +2809,27 @@
    "first_seen": "2026-10-31T07:56:05Z",
    "last_checked": null,
    "last_ok": null,
-   "last_seen": "2026-10-31T07:56:05Z",
+   "last_seen": "2026-10-31T07:57:17Z",
    "ok_count": 0,
    "ping": 32,
    "sessions": 5,
    "speed_mbps": 670.29,
    "sstp": "sstp://vpn:vpn@vpn610596269.opengw.net:995",
    "uptime_days": 0.44
+  },
+  "vpn611925402.opengw.net:1725": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 33,
+   "sessions": 18,
+   "speed_mbps": 708.85,
+   "sstp": "sstp://vpn:vpn@vpn611925402.opengw.net:1725",
+   "uptime_days": 0.65
   },
   "vpn622613092.opengw.net:1496": {
    "country": "Japan",
@@ -2159,7 +2863,7 @@
    "first_seen": "2026-10-31T07:56:05Z",
    "last_checked": null,
    "last_ok": null,
-   "last_seen": "2026-10-31T07:56:05Z",
+   "last_seen": "2026-10-31T07:57:17Z",
    "ok_count": 0,
    "ping": 29,
    "sessions": 8,
@@ -2266,7 +2970,7 @@
    "first_seen": "2026-10-31T07:56:05Z",
    "last_checked": null,
    "last_ok": null,
-   "last_seen": "2026-10-31T07:56:05Z",
+   "last_seen": "2026-10-31T07:57:17Z",
    "ok_count": 0,
    "ping": 32,
    "sessions": 9,
@@ -2300,6 +3004,20 @@
    "speed_mbps": 566.57,
    "sstp": "sstp://vpn:vpn@vpn680288952.opengw.net:1243"
   },
+  "vpn686659377.opengw.net:1909": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 4,
+   "sessions": 26,
+   "speed_mbps": 723.85,
+   "sstp": "sstp://vpn:vpn@vpn686659377.opengw.net:1909",
+   "uptime_days": 0.44
+  },
   "vpn693207949.opengw.net:1699": {
    "country": "Russian Federation",
    "fail_count": 0,
@@ -2325,6 +3043,20 @@
    "sessions": 6,
    "speed_mbps": 590.25,
    "sstp": "sstp://vpn:vpn@vpn693809461.opengw.net:1457",
+   "uptime_days": 0.0
+  },
+  "vpn706828378.opengw.net:1468": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 2,
+   "sessions": 36,
+   "speed_mbps": 4439.83,
+   "sstp": "sstp://vpn:vpn@vpn706828378.opengw.net:1468",
    "uptime_days": 0.0
   },
   "vpn710136103.opengw.net:995": {
@@ -2419,6 +3151,20 @@
    "speed_mbps": 610.96,
    "sstp": "sstp://vpn:vpn@vpn733714998.opengw.net:1540"
   },
+  "vpn738904670.opengw.net:1252": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 7,
+   "sessions": 20,
+   "speed_mbps": 703.22,
+   "sstp": "sstp://vpn:vpn@vpn738904670.opengw.net:1252",
+   "uptime_days": 0.0
+  },
   "vpn739863098.opengw.net:1562": {
    "country": "Japan",
    "fail_count": 0,
@@ -2446,6 +3192,20 @@
    "speed_mbps": 3310.84,
    "sstp": "sstp://vpn:vpn@vpn745346330.opengw.net:995",
    "uptime_days": 0.65
+  },
+  "vpn745412775.opengw.net:1955": {
+   "country": "United States",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 24,
+   "sessions": 83,
+   "speed_mbps": 0.0,
+   "sstp": "sstp://vpn:vpn@vpn745412775.opengw.net:1955",
+   "uptime_days": 0.0
   },
   "vpn760976437.opengw.net:1533": {
    "country": "Japan",
@@ -2500,6 +3260,34 @@
    "speed_mbps": 3834.87,
    "sstp": "sstp://vpn:vpn@vpn771852693.opengw.net:1399"
   },
+  "vpn784026759.opengw.net:1936": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 25,
+   "sessions": 10,
+   "speed_mbps": 256.92,
+   "sstp": "sstp://vpn:vpn@vpn784026759.opengw.net:1936",
+   "uptime_days": 0.44
+  },
+  "vpn801494251.opengw.net:1929": {
+   "country": "United States",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 3,
+   "sessions": 70,
+   "speed_mbps": 0.0,
+   "sstp": "sstp://vpn:vpn@vpn801494251.opengw.net:1929",
+   "uptime_days": 0.0
+  },
   "vpn801893282.opengw.net:995": {
    "country": "Korea Republic of",
    "fail_count": 2,
@@ -2538,6 +3326,62 @@
    "sessions": 5,
    "speed_mbps": 2411.53,
    "sstp": "sstp://vpn:vpn@vpn805893912.opengw.net:995"
+  },
+  "vpn809055963.opengw.net:1752": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 28,
+   "sessions": 5,
+   "speed_mbps": 71.11,
+   "sstp": "sstp://vpn:vpn@vpn809055963.opengw.net:1752",
+   "uptime_days": 5.66
+  },
+  "vpn811974197.opengw.net:1468": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 24,
+   "sessions": 11,
+   "speed_mbps": 505.16,
+   "sstp": "sstp://vpn:vpn@vpn811974197.opengw.net:1468",
+   "uptime_days": 0.0
+  },
+  "vpn819358376.opengw.net:1298": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 42,
+   "sessions": 57,
+   "speed_mbps": 2985.43,
+   "sstp": "sstp://vpn:vpn@vpn819358376.opengw.net:1298",
+   "uptime_days": 3.72
+  },
+  "vpn824789035.opengw.net:1845": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 16,
+   "sessions": 2,
+   "speed_mbps": 2568.42,
+   "sstp": "sstp://vpn:vpn@vpn824789035.opengw.net:1845",
+   "uptime_days": 0.0
   },
   "vpn830401246.opengw.net:1634": {
    "country": "Korea Republic of",
@@ -2580,6 +3424,20 @@
    "speed_mbps": 704.87,
    "sstp": "sstp://vpn:vpn@vpn837675628.opengw.net:1980"
   },
+  "vpn842317346.opengw.net:1795": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 25,
+   "sessions": 8,
+   "speed_mbps": 152.43,
+   "sstp": "sstp://vpn:vpn@vpn842317346.opengw.net:1795",
+   "uptime_days": 3.72
+  },
   "vpn844197835.opengw.net:1411": {
    "country": "Japan",
    "fail_count": 0,
@@ -2606,6 +3464,20 @@
    "speed_mbps": 313.92,
    "sstp": "sstp://vpn:vpn@vpn844508033.opengw.net:1558",
    "uptime_days": 10.71
+  },
+  "vpn845011546.opengw.net:1379": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 44,
+   "sessions": 19,
+   "speed_mbps": 756.02,
+   "sstp": "sstp://vpn:vpn@vpn845011546.opengw.net:1379",
+   "uptime_days": 0.44
   },
   "vpn849985359.opengw.net:1773": {
    "country": "Japan",
@@ -2742,6 +3614,20 @@
    "speed_mbps": 2862.59,
    "sstp": "sstp://vpn:vpn@vpn863787247.opengw.net:1575"
   },
+  "vpn880844592.opengw.net:995": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 29,
+   "sessions": 6,
+   "speed_mbps": 4116.23,
+   "sstp": "sstp://vpn:vpn@vpn880844592.opengw.net:995",
+   "uptime_days": 0.0
+  },
   "vpn882137641.opengw.net:1648": {
    "country": "Japan",
    "fail_count": 0,
@@ -2767,6 +3653,20 @@
    "sessions": 5,
    "speed_mbps": 624.94,
    "sstp": "sstp://vpn:vpn@vpn882299588.opengw.net:1224"
+  },
+  "vpn887613862.opengw.net:1524": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 29,
+   "sessions": 10,
+   "speed_mbps": 386.66,
+   "sstp": "sstp://vpn:vpn@vpn887613862.opengw.net:1524",
+   "uptime_days": 0.0
   },
   "vpn890053288.opengw.net:995": {
    "country": "Korea Republic of",
@@ -2794,6 +3694,20 @@
    "speed_mbps": 688.19,
    "sstp": "sstp://vpn:vpn@vpn893972689.opengw.net:1934"
   },
+  "vpn894793773.opengw.net:1720": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 22,
+   "sessions": 5,
+   "speed_mbps": 1222.81,
+   "sstp": "sstp://vpn:vpn@vpn894793773.opengw.net:1720",
+   "uptime_days": 0.0
+  },
   "vpn898274948.opengw.net:995": {
    "country": "Korea Republic of",
    "fail_count": 0,
@@ -2807,6 +3721,20 @@
    "speed_mbps": 744.91,
    "sstp": "sstp://vpn:vpn@vpn898274948.opengw.net:995",
    "uptime_days": 0.0
+  },
+  "vpn898866193.opengw.net:1446": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 32,
+   "sessions": 4,
+   "speed_mbps": 770.77,
+   "sstp": "sstp://vpn:vpn@vpn898866193.opengw.net:1446",
+   "uptime_days": 6.72
   },
   "vpn906340167.opengw.net:1701": {
    "country": "Korea Republic of",
@@ -2834,6 +3762,34 @@
    "sessions": 9,
    "speed_mbps": 457.94,
    "sstp": "sstp://vpn:vpn@vpn915688854.opengw.net:1929"
+  },
+  "vpn919857584.opengw.net:1667": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 8,
+   "sessions": 18,
+   "speed_mbps": 733.14,
+   "sstp": "sstp://vpn:vpn@vpn919857584.opengw.net:1667",
+   "uptime_days": 0.44
+  },
+  "vpn920060572.opengw.net:1681": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 19,
+   "sessions": 2,
+   "speed_mbps": 2289.59,
+   "sstp": "sstp://vpn:vpn@vpn920060572.opengw.net:1681",
+   "uptime_days": 0.44
   },
   "vpn922041785.opengw.net:1435": {
    "country": "Korea Republic of",
@@ -2917,6 +3873,48 @@
    "sstp": "sstp://vpn:vpn@vpn933450169.opengw.net:1309",
    "uptime_days": 11.72
   },
+  "vpn939484811.opengw.net:1423": {
+   "country": "Viet Nam",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 20,
+   "sessions": 2,
+   "speed_mbps": 649.75,
+   "sstp": "sstp://vpn:vpn@vpn939484811.opengw.net:1423",
+   "uptime_days": 0.0
+  },
+  "vpn944787791.opengw.net:1877": {
+   "country": "Russian Federation",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 83,
+   "sessions": 15,
+   "speed_mbps": 701.54,
+   "sstp": "sstp://vpn:vpn@vpn944787791.opengw.net:1877",
+   "uptime_days": 0.44
+  },
+  "vpn949832711.opengw.net:1631": {
+   "country": "Japan",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 2,
+   "sessions": 72,
+   "speed_mbps": 5287.15,
+   "sstp": "sstp://vpn:vpn@vpn949832711.opengw.net:1631",
+   "uptime_days": 0.44
+  },
   "vpn953140495.opengw.net:995": {
    "country": "Korea Republic of",
    "fail_count": 0,
@@ -2957,6 +3955,20 @@
    "sstp": "sstp://vpn:vpn@vpn962378948.opengw.net:1743",
    "uptime_days": 0.44
   },
+  "vpn974636512.opengw.net:1414": {
+   "country": "Korea Republic of",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 25,
+   "sessions": 13,
+   "speed_mbps": 712.11,
+   "sstp": "sstp://vpn:vpn@vpn974636512.opengw.net:1414",
+   "uptime_days": 0.0
+  },
   "vpn975520107.opengw.net:1929": {
    "country": "Japan",
    "fail_count": 0,
@@ -2983,8 +3995,22 @@
    "sessions": 57,
    "speed_mbps": 544.17,
    "sstp": "sstp://vpn:vpn@vpn981185492.opengw.net:1623"
+  },
+  "vpn990572876.opengw.net:1493": {
+   "country": "Lao People's Democratic Republic",
+   "fail_count": 0,
+   "first_seen": "2026-10-31T07:57:17Z",
+   "last_checked": null,
+   "last_ok": null,
+   "last_seen": "2026-10-31T07:57:17Z",
+   "ok_count": 0,
+   "ping": 205,
+   "sessions": 32,
+   "speed_mbps": 543.49,
+   "sstp": "sstp://vpn:vpn@vpn990572876.opengw.net:1493",
+   "uptime_days": 2.53
   }
  },
- "sstp_seen": 86,
- "updated_at": "2026-10-31T07:56:05Z"
+ "sstp_seen": 85,
+ "updated_at": "2026-10-31T07:57:17Z"
 }
