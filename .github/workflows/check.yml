@@ -65,11 +65,15 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add result.txt result.json
           if git diff --cached --quiet; then
-            echo "结果无变化，跳过提交"
-          else
-            git commit -m "chore: vpngate sstp result $(date -u +%FT%TZ) [skip ci]"
-            git push
+            echo "结果无变化，跳过提交"; exit 0
           fi
+          git commit -m "chore: vpngate sstp result $(date -u +%FT%TZ) [skip ci]"
+          # 并发提交/手动推送会把远端顶走，这里重试 5 次（每次先 rebase）
+          for i in 1 2 3 4 5; do
+            if git push; then echo "push ok"; exit 0; fi
+            echo "push 失败，第 $i 次重试..."; git pull --rebase --autostash origin main || true; sleep 5
+          done
+          echo "多次重试仍失败"; exit 1
 
       - name: 上传 artifact
         if: always()
