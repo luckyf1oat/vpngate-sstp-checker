@@ -14,6 +14,10 @@ on:
         description: "只测 vpngate 自报 ping <= 该值"
         required: false
         default: "400"
+      jobs:
+        description: "并发路数（实测 >1 会被 vpngate 按源 IP 限流，建议 1）"
+        required: false
+        default: "1"
 
 permissions:
   contents: write
@@ -46,12 +50,14 @@ jobs:
         env:
           LIMIT: ${{ inputs.limit || github.event.inputs.limit || '100' }}
           MAX_PING: ${{ inputs.max_ping || github.event.inputs.max_ping || '400' }}
-          CONNECT_TIMEOUT: "10"
+          CONNECT_TIMEOUT: "8"
           FETCH_TIMEOUT: "8"
         run: |
+          # 多路 netns 并发：每路独立 ppp0/路由表，互不干扰
           sudo env "PATH=$PATH" LIMIT="$LIMIT" MAX_PING="$MAX_PING" \
                CONNECT_TIMEOUT="$CONNECT_TIMEOUT" FETCH_TIMEOUT="$FETCH_TIMEOUT" \
-               python3 checker.py
+               JOBS="${{ inputs.jobs || github.event.inputs.jobs || '1' }}" \
+               bash scripts/parallel.sh
 
       - name: 提交结果
         run: |

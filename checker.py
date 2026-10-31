@@ -30,11 +30,12 @@ API_URL = os.environ.get("VPNGATE_API", "https://www.vpngate.net/api/iphone/")
 IPAPI = os.environ.get("IPAPI_URL", "https://ip.5671234.xyz/json/")
 LIMIT = int(os.environ.get("LIMIT", "100"))
 MAX_PING = int(os.environ.get("MAX_PING", "400"))
-CONNECT_TIMEOUT = int(os.environ.get("CONNECT_TIMEOUT", "10"))
+CONNECT_TIMEOUT = int(os.environ.get("CONNECT_TIMEOUT", "8"))
 FETCH_TIMEOUT = int(os.environ.get("FETCH_TIMEOUT", "8"))
 OUT_TXT = os.environ.get("OUT_TXT", "result.txt")
 OUT_JSON = os.environ.get("OUT_JSON", "result.json")
 ALLOW_EXISTING_PPP0 = os.environ.get("ALLOW_EXISTING_PPP0", "0") == "1"
+SHARD = os.environ.get("SHARD", "")          # "k/n"：多进程分片（每片跑在自己的 netns 里）
 MY_IP = ""
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
@@ -149,7 +150,12 @@ def fetch_servers():
 
     servers.sort(key=lambda x: (x["ping"], -x["speed_mbps"]))
     servers = [s for s in servers if s["ping"] <= MAX_PING]
-    return servers if LIMIT <= 0 else servers[:LIMIT]
+    if LIMIT > 0:
+        servers = servers[:LIMIT]
+    if SHARD:
+        k, n = (int(v) for v in SHARD.split("/"))
+        servers = servers[k::n]
+    return servers
 
 
 def parse_servers(html: str):
@@ -223,19 +229,19 @@ def kill_vpn(proc):
         os.killpg(os.getpgid(proc.pid), signal.SIGTERM)
     except Exception:
         pass
-    for _ in range(10):
+    for _ in range(6):
         if proc.poll() is not None:
             break
-        time.sleep(0.3)
+        time.sleep(0.2)
     try:
         os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
     except Exception:
         pass
     run(["pkill", "-f", "sstpc"], 5)
-    for _ in range(10):
+    for _ in range(8):
         if not ppp0_exists():
             return
-        time.sleep(0.5)
+        time.sleep(0.25)
     run(["ip", "link", "del", "ppp0"], 5)
 
 
