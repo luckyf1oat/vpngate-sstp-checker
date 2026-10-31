@@ -2,22 +2,14 @@ name: vpngate-sstp-check
 
 on:
   schedule:
-    # 每 2 小时一次（UTC 偶数点）
-    - cron: "0 */2 * * *"
+    # 每 2 小时测一轮（整点采集后 30 分钟）
+    - cron: "30 */2 * * *"
   workflow_dispatch:
     inputs:
-      limit:
-        description: "本轮最多测试几台（0=全部）"
+      max_test:
+        description: "本轮最多测几台（0=全库）"
         required: false
-        default: "100"
-      max_ping:
-        description: "只测 vpngate 自报 ping <= 该值"
-        required: false
-        default: "400"
-      jobs:
-        description: "并发路数（实测 >1 会被 vpngate 按源 IP 限流，建议 1）"
-        required: false
-        default: "1"
+        default: "0"
 
 permissions:
   contents: write
@@ -29,7 +21,7 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -44,36 +36,30 @@ jobs:
         run: |
           sudo modprobe ppp_generic || true
           sudo modprobe ppp_async || true
-          lsmod | grep -E '^ppp' || echo "警告: 没有 ppp 模块，SSTP 可能起不来"
+          lsmod | grep -E '^ppp' || echo "警告: 没有 ppp 模块"
 
-      - name: 跑测试
+      - name: 检测（上次有效优先 + 全库）
         env:
-          LIMIT: ${{ inputs.limit || github.event.inputs.limit || '100' }}
-          MAX_PING: ${{ inputs.max_ping || github.event.inputs.max_ping || '400' }}
+          MAX_TEST: ${{ inputs.max_test || github.event.inputs.max_test || '0' }}
           CONNECT_TIMEOUT: "8"
           FETCH_TIMEOUT: "8"
         run: |
-          # 多路 netns 并发：每路独立 ppp0/路由表，互不干扰
-          sudo env "PATH=$PATH" LIMIT="$LIMIT" MAX_PING="$MAX_PING" \
+          sudo env "PATH=$PATH" MAX_TEST="$MAX_TEST" \
                CONNECT_TIMEOUT="$CONNECT_TIMEOUT" FETCH_TIMEOUT="$FETCH_TIMEOUT" \
-               JOBS="${{ inputs.jobs || github.event.inputs.jobs || '1' }}" \
-               bash scripts/parallel.sh
+               python3 check.py
 
       - name: 提交结果
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add result.txt result.json
-          if git diff --cached --quiet; then
-            echo "结果无变化，跳过提交"; exit 0
-          fi
-          git commit -m "chore: vpngate sstp result $(date -u +%FT%TZ) [skip ci]"
-          # 并发提交/手动推送会把远端顶走，这里重试 5 次（每次先 rebase）
+          git add result.txt result.json sstpall.json
+          if git diff --cached --quiet; then echo "结果无变化，跳过提交"; exit 0; fi
+          git commit -m "chore: sstp check $(date -u +%FT%TZ) [skip ci]"
           for i in 1 2 3 4 5; do
             if git push; then echo "push ok"; exit 0; fi
             echo "push 失败，第 $i 次重试..."; git pull --rebase --autostash origin main || true; sleep 5
           done
-          echo "多次重试仍失败"; exit 1
+          exit 1
 
       - name: 上传 artifact
         if: always()
