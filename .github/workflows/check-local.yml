@@ -1,0 +1,103 @@
+name: vpngate-sstp-check-local (pppd 备用)
+
+on:
+  # 只在需要时手动跑：正常检测走 check.yml（cks5 检测接口）
+  workflow_dispatch:
+    inputs:
+      shards:
+        description: "并行分片数（每个 runner 独立出口 IP，绕开按 IP 限流）"
+        required: false
+        default: "6"
+      max_test:
+        description: "本轮最多测几台（0=全库）"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vpngate-sstp-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5]
+    env:
+      SHARDS: ${{ inputs.shards || github.event.inputs.shards || '6' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 安装 sstp-client / ppp
+        run: |
+          # runner 自带包列表通常是新的，先直接装；失败再 update（省 10-15s）
+          sudo apt-get install -y -qq sstp-client ppp curl iproute2 python3 \
+            || (sudo apt-get update -qq && sudo apt-get install -y -qq sstp-client ppp curl iproute2 python3)
+
+      - name: 加载 ppp 内核模块
+        run: |
+          sudo modprobe ppp_generic || true
+          sudo modprobe ppp_async || true
+          lsmod | grep -E '^ppp' || true
+
+      - name: 检测分片 ${{ matrix.shard }}/${{ env.SHARDS }}
+        env:
+          MAX_TEST: ${{ inputs.max_test || github.event.inputs.max_test || '0' }}
+          CONNECT_TIMEOUT: "8"
+          FETCH_TIMEOUT: "8"
+        run: |
+          sudo env "PATH=$PATH" \
+               SHARD="${{ matrix.shard }}/${SHARDS}" \
+               MAX_TEST="$MAX_TEST" CONNECT_TIMEOUT="$CONNECT_TIMEOUT" FETCH_TIMEOUT="$FETCH_TIMEOUT" \
+               OUT_TXT="result-${{ matrix.shard }}.txt" \
+               OUT_JSON="result-${{ matrix.shard }}.json" \
+               STATE_OUT="pool-${{ matrix.shard }}.json" \
+               python3 check.py
+
+      - name: 上传分片产物
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shard-${{ matrix.shard }}
+          path: |
+            result-${{ matrix.shard }}.json
+            pool-${{ matrix.shard }}.json
+          if-no-files-found: warn
+
+  merge:
+    needs: check
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 下载全部分片产物
+        uses: actions/download-artifact@v4
+        with:
+          pattern: shard-*
+          path: .
+          merge-multiple: true
+
+      - name: 合并
+        run: |
+          ls result-*.json pool-*.json 2>/dev/null || echo "没有分片产物"
+          python3 scripts/merge_shards.py
+
+      - name: 提交结果
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add result.txt result-ranked.txt result.json sstpall.json
+          if git diff --cached --quiet; then echo "结果无变化，跳过提交"; exit 0; fi
+          git commit -m "chore: sstp check $(date -u +%FT%TZ) [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git push; then echo "push ok"; exit 0; fi
+            echo "push 失败，第 $i 次重试..."; git pull --rebase --autostash origin main || true; sleep 5
+          done
+          exit 1
