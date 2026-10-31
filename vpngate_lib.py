@@ -15,7 +15,9 @@ from urllib.parse import urlparse
 
 SITE = os.environ.get("VPNGATE_URL", "https://www.vpngate.net/cn/")
 API_URL = os.environ.get("VPNGATE_API", "https://www.vpngate.net/api/iphone/")
-IPAPI = os.environ.get("IPAPI_URL", "https://ip.5671234.xyz/json/")
+IPAPI = os.environ.get("IPAPI_URL", "https://cks5.115567.xyz/ip.json")
+# 兜底接口（主接口失败时用）：老的自建 ip 回显
+IPAPI_FALLBACK = os.environ.get("IPAPI_FALLBACK", "https://ip.5671234.xyz/json/")
 FETCH_TIMEOUT = int(os.environ.get("FETCH_TIMEOUT", "8"))
 CONNECT_TIMEOUT = int(os.environ.get("CONNECT_TIMEOUT", "8"))
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
@@ -111,11 +113,43 @@ def ppp0_up() -> bool:
     return out.returncode == 0 and "inet " in out.stdout
 
 
-def api_via_tunnel():
-    """只把 ip.5671234.xyz 的 A 记录钉到 ppp0，查完立刻删路由（不动默认路由）"""
-    ips = sorted({ai[4][0] for ai in socket.getaddrinfo(API_HOST, API_PORT, socket.AF_INET)})
+def _host_of(url: str):
+    u = urlparse(url)
+    return u.hostname, (u.port or 443)
+
+
+def normalize_ip_info(d: dict) -> dict:
+    """兼容两套返回：
+    cks5:  {ip, country, region, city, timezone, colo, asn(int), asOrganization, org}
+    ip567: {ip, location:{country,countryName,region,city,timezone}, network:{asn,org,colo}}
+    """
+    d = d or {}
+    loc = d.get("location") or {}
+    net = d.get("network") or {}
+    asn = net.get("asn") or ""
+    if not asn and d.get("asn"):
+        asn = f"AS{d['asn']}"
+    return {
+        "ip": d.get("ip") or "",
+        "ipType": d.get("ipType") or "",
+        "country": loc.get("country") or d.get("country") or "",
+        "countryName": loc.get("countryName") or d.get("countryName") or d.get("country") or "",
+        "region": loc.get("region") or d.get("region") or "",
+        "city": loc.get("city") or d.get("city") or "",
+        "asn": asn,
+        "org": net.get("org") or d.get("asOrganization") or d.get("org") or "",
+        "timezone": loc.get("timezone") or d.get("timezone") or "",
+        "colo": net.get("colo") or d.get("colo") or "",
+    }
+
+
+def api_via_tunnel(url: str = ""):
+    """只把该接口的 A 记录钉到 ppp0，查完立刻删路由（不动默认路由）"""
+    url = url or IPAPI
+    host, port = _host_of(url)
+    ips = sorted({ai[4][0] for ai in socket.getaddrinfo(host, port, socket.AF_INET)})
     if not ips:
-        raise RuntimeError("DNS 解析 %s 失败" % API_HOST)
+        raise RuntimeError("DNS 解析 %s 失败" % host)
     added = []
     try:
         for ip in ips:
@@ -126,7 +160,7 @@ def api_via_tunnel():
         if "ppp0" not in run(["ip", "route", "get", ips[0]], 5).stdout:
             raise RuntimeError("路由未走 ppp0")
         raw = run(["curl", "-sS", "-4", "--max-time", str(FETCH_TIMEOUT),
-                   "--resolve", f"{API_HOST}:{API_PORT}:{ips[0]}", IPAPI,
+                   "--resolve", f"{host}:{port}:{ips[0]}", url,
                    "-H", f"User-Agent: {UA}"], FETCH_TIMEOUT + 5).stdout
         return json.loads(raw)
     finally:
@@ -174,28 +208,25 @@ def probe(host_port: str, idx: int, total: int, my_ip: str = ""):
             log(f"[{idx}/{total}] {host_port} 连不上 ({time.time()-t0:.1f}s)")
             return None
         connect_s = time.time() - t0
-        try:
-            info = api_via_tunnel()
-        except Exception as e:
-            log(f"[{idx}/{total}] {host_port} 隧道通但取 IP 失败: {e}")
+        detail = None
+        last_err = None
+        for api_url in (IPAPI, IPAPI_FALLBACK):
+            if not api_url:
+                continue
+            try:
+                detail = normalize_ip_info(api_via_tunnel(api_url))
+                detail["src_api"] = api_url
+                break
+            except Exception as e:
+                last_err = e
+                log(f"[{idx}/{total}] {host_port} 取 IP 失败({api_url}): {e}")
+        if not detail:
+            log(f"[{idx}/{total}] {host_port} 所有 IP 接口都失败: {last_err}")
             return None
-        ip = info.get("ip") or ""
+        ip = detail.get("ip") or ""
         if not ip or (my_ip and ip == my_ip):
             log(f"[{idx}/{total}] {host_port} 出口无效 ({ip})")
             return None
-        loc = info.get("location") or {}
-        net = info.get("network") or {}
-        detail = {
-            "ip": ip,
-            "country": loc.get("country") or "",
-            "countryName": loc.get("countryName") or "",
-            "region": loc.get("region") or "",
-            "city": loc.get("city") or "",
-            "asn": net.get("asn") or "",
-            "org": net.get("org") or "",
-            "timezone": loc.get("timezone") or "",
-            "colo": net.get("colo") or "",
-        }
         log(f"[{idx}/{total}] {host_port} OK {connect_s:.1f}s -> {ip} {detail['country']}/{detail['city']} {detail['org']}")
         return {"sstp": f"sstp://vpn:vpn@{host_port}", "host": host_port,
                 "connect_s": round(connect_s, 2), "detail": detail}
@@ -204,7 +235,11 @@ def probe(host_port: str, idx: int, total: int, my_ip: str = ""):
 
 
 def my_ip() -> str:
-    try:
-        return (json.loads(http_get(IPAPI, 10)) or {}).get("ip") or ""
-    except Exception:
-        return ""
+    for url in (IPAPI, IPAPI_FALLBACK):
+        if not url:
+            continue
+        try:
+            return normalize_ip_info(json.loads(http_get(url, 10))).get("ip") or ""
+        except Exception:
+            continue
+    return ""
