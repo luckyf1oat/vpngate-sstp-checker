@@ -25,6 +25,27 @@ sstp://vpn:vpn@public-vpn-114.opengw.net:443  {"ip":"219.100.37.236","country":"
 `result.json` 带连接耗时 `connect_s`；`sstpall.json` 带每台的
 `first_seen / last_seen / last_checked / last_ok / ok_count / fail_count`。
 
+## 评分榜 `result-ranked.txt`
+
+同样的节点，按综合评分从高到低排；行尾 JSON 里多两个字段：`score`（0–100）和 `score_parts`（各项得分）。
+
+| 维度 | 权重 | 怎么算 |
+|---|---|---|
+| 家宽 | 30 | 出口 org/ASN 命中运营商关键词 = 家宽(30)；中性(16.5)；命中机房/云/VPN 厂商(4.5) |
+| 带宽 | 20 | `log10(speed_mbps)/log10(800)` 封顶，800Mbps 满分（vpngate 自报） |
+| 在线时长 | 15 | CSV 的 `Uptime`（毫秒）换算成天，30 天满分 |
+| 延迟 | 15 | `1 - ping/250ms` |
+| 稳定性 | 15 | 库里的 `(ok+1)/(ok+fail+2)`，多轮存活才高分 |
+| 负载 | 3 | `1 - sessions/150`，当前会话越少越好 |
+| 建链 | 2 | `1 - connect_s/12s` |
+
+`score_parts.kind` 是家宽判定结果：`res` / `unknown` / `idc`。
+判定逻辑在 `ranking.py`：先查机房/云厂关键词（amazon/aws/google/azure/oracle/digitalocean/hetzner/softether/it7/dmit…），命中即 `idc`；
+再看运营商关键词（telecom/communications/broadband/kddi/softbank/kt/sk broadband/comcast/verizon…），命中即 `res`。
+
+> 注意：VPN Gate 的 `public-vpn-*.opengw.net` 是项目自己放在机房的机器（org=SoftEther Corporation），
+> 稳定但不算家宽，评分会明显低于 `vpn<数字>.opengw.net` 这种志愿者家里的机器。
+
 ## 数据来源
 
 - **官方 CSV API** `https://www.vpngate.net/api/iphone/`
