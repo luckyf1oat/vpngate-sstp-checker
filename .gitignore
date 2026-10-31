@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
-result-*.json
-result-*.txt
+result-[0-9]*.txt
+result-[0-9]*.json
+pool-[0-9]*.json
 worker-*.log
