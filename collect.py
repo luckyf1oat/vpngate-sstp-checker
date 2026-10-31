@@ -69,28 +69,8 @@ def main():
             rec.update(country=s["country"], ping=s["ping"], speed_mbps=s["speed_mbps"],
                        sessions=s["sessions"], uptime_days=s.get("uptime_days", 0), last_seen=now)
 
-    # 清理：12 小时没在官网出现、且从未成功过的（不同 runner 视角会带来大量一次性条目）
-    import datetime
-    cutoff = (datetime.datetime.utcnow() - datetime.timedelta(hours=12)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    # 按 F1x 要求：不按时间清理、不设库上限，全部累积保留
     pruned = 0
-    for hp in list(servers):
-        rec = servers[hp]
-        if (rec.get("last_seen") or "") < cutoff and not (rec.get("ok_count") or 0):
-            del servers[hp]
-            pruned += 1
-
-    # 硬上限：超过 250 台就按「曾经成功过 + 最近出现」保留
-    MAX_POOL = int(os.environ.get("MAX_POOL", "200"))
-    if len(servers) > MAX_POOL:
-        def rank_key(item):
-            hp, rec = item
-            # 新鲜度优先（新见到的节点也能留下被测），成功历史只做次要权重
-            return (rec.get("last_seen") or "", 1 if (rec.get("ok_count") or 0) else 0)
-        keep = dict(sorted(servers.items(), key=rank_key, reverse=True)[:MAX_POOL])
-        pruned += len(servers) - len(keep)
-        servers.clear()
-        servers.update(keep)
-
     pool["updated_at"] = now
     pool["api_seen"] = len(api)
     pool["sstp_seen"] = len(ports)
@@ -104,8 +84,7 @@ def main():
 
     live = sum(1 for r in servers.values() if (r.get("last_seen") or "") >= (now[:13] + ":00:00Z"))
     lib.log(f"采集完成：本轮 API {len(api)} 台 / 页面 SSTP {len(ports)} 台；"
-            f"新增 {added}，清理过期/超上限 {pruned}，库总 {len(servers)}（{before}→{len(servers)}），"
-            f"本轮刷新 {live} 台")
+            f"新增 {added}，库总 {len(servers)}（{before}→{len(servers)}），本轮刷新 {live} 台（不做清理/不设上限）")
     return 0
 
 
