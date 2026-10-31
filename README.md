@@ -5,7 +5,8 @@
 | 工作流 | 频率 | 干什么 |
 |---|---|---|
 | **collect.yml** | 每小时 :05 | 拉官方 API + 列表页，把当前可见的 SSTP 服务器并进 `sstpall.txt` 库（去重累积） |
-| **check.yml** | 每 2 小时 :30 | 用 **MS-SSTP 真实建链**测「上次有效的 + 全库」，活着的写进 `result.txt` |
+| **check.yml** | 每 2 小时 :30 | 调 `https://cks5.115567.xyz/check?sstp=vpn:vpn@host:port` 测「上次有效 + 全库」，**200 台约 42 秒** |
+| check-local.yml | 手动 | pppd/sstpc 本地建链版本（备用，cks5 挂了时用） |
 
 ## 产物
 
@@ -55,7 +56,18 @@ sstp://vpn:vpn@public-vpn-114.opengw.net:443  {"ip":"219.100.37.236","country":"
 
 两边取交集：API 有、页面也标了 SSTP 的才进库。
 
-## 检测流程
+## 检测流程（默认走 cks5 检测接口）
+
+1. 目标 = 上次 `result.json` 里可用的（优先）+ 库里其余（从未检测 → 最久未检测）
+2. 并发 20 调 `GET https://cks5.115567.xyz/check?sstp=vpn:vpn@<host>:<port>`
+   该 Worker 内部用纯 JS 实现 SSTP 客户端，连上后在隧道里请求 iplocate 拿出口信息，
+   返回 `{success, colo, responseTime, exit:{ip, country_code, city, region, timezone, asn{...}}}`
+3. 结果按 `connect_s=responseTime/1000` 排序、按出口 IP 去重、按评分写 `result-ranked.txt`
+
+> 这套不需要 root / pppd / netns，200 台并发 20 只要 **42 秒**（原 pppd 6 分片要 5 分 13 秒）。
+> 早期版本（`check-local.yml`）保留 pppd 真连流程做交叉验证。
+
+### 老流程（备用）：本地 pppd 建链
 
 1. 目标 = 上次 `result.json` 里可用的（优先）+ 库里其余（从未检测 → 最久未检测）
 2. `sstpc --user vpn --password vpn --cert-warn <host:port> -- noauth nodetach noipdefault mtu 1400 ...`
