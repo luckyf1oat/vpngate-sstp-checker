@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 
 import vpngate_lib as lib
 
@@ -28,6 +29,13 @@ def load_pool():
 def main():
     pool = load_pool()
     servers = pool.setdefault("servers", {})
+    # 清掉早期版本写进来的非法主机名（laud.opengw.net / public-vpn-0 之类）
+    valid = re.compile(r"^(public-vpn-\d+|vpn\d+)\.opengw\.net:\d+$")
+    bad = [hp for hp in servers if not valid.match(hp)]
+    for hp in bad:
+        del servers[hp]
+    if bad:
+        lib.log(f"清掉非法条目 {len(bad)} 个")
     before = len(servers)
 
     api = lib.api_list()
