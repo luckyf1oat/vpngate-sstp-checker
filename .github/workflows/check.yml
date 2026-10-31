@@ -44,8 +44,8 @@ jobs:
 
       - name: 跑测试
         env:
-          LIMIT: ${{ github.event.inputs.limit || '40' }}
-          MAX_PING: ${{ github.event.inputs.max_ping || '400' }}
+          LIMIT: ${{ inputs.limit || github.event.inputs.limit || '40' }}
+          MAX_PING: ${{ inputs.max_ping || github.event.inputs.max_ping || '400' }}
           CONNECT_TIMEOUT: "15"
           FETCH_TIMEOUT: "12"
         run: |
