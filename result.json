@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-31T07:29:41Z",
+  "updated_at": "2026-10-31T07:55:21Z",
   "tested": 152,
-  "alive": 103,
+  "alive": 106,
   "results": [
     {
-      "sstp": "sstp://vpn:vpn@public-vpn-97.opengw.net:443",
-      "host": "public-vpn-97.opengw.net:443",
-      "connect_s": 2.02,
+      "sstp": "sstp://vpn:vpn@public-vpn-148.opengw.net:443",
+      "host": "public-vpn-148.opengw.net:443",
+      "connect_s": 2.42,
       "detail": {
-        "ip": "219.100.37.238",
+        "ip": "219.100.37.239",
         "country": "JP",
         "countryName": "Japan",
         "region": "Tokyo",
@@ -18,28 +18,23 @@
         "timezone": "Asia/Tokyo",
         "colo": "NRT",
         "src": "pool"
+      },
+      "score": 53.2,
+      "score_parts": {
+        "house": 4.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.7,
+        "stable": 11.2,
+        "load": 2.2,
+        "conn": 1.6,
+        "kind": "idc",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn666679436.opengw.net:1688",
-      "host": "vpn666679436.opengw.net:1688",
-      "connect_s": 2.42,
-      "detail": {
-        "ip": "60.135.165.23",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS17676",
-        "org": "Japan Nation-wide Network of Softbank Corp.",
-        "timezone": "Asia/Tokyo",
-        "colo": "KIX",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@public-vpn-48.opengw.net:443",
-      "host": "public-vpn-48.opengw.net:443",
+      "sstp": "sstp://vpn:vpn@public-vpn-51.opengw.net:443",
+      "host": "public-vpn-51.opengw.net:443",
       "connect_s": 2.43,
       "detail": {
         "ip": "219.100.37.233",
@@ -52,48 +47,26 @@
         "timezone": "Asia/Tokyo",
         "colo": "NRT",
         "src": "pool"
+      },
+      "score": 51.7,
+      "score_parts": {
+        "house": 4.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.1,
+        "stable": 10.0,
+        "load": 1.5,
+        "conn": 1.6,
+        "kind": "idc",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@public-vpn-217.opengw.net:443",
-      "host": "public-vpn-217.opengw.net:443",
-      "connect_s": 2.82,
+      "sstp": "sstp://vpn:vpn@vpn666679436.opengw.net:1688",
+      "host": "vpn666679436.opengw.net:1688",
+      "connect_s": 2.43,
       "detail": {
-        "ip": "219.100.37.246",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS36599",
-        "org": "SoftEther Corporation",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn391279314.opengw.net:1925",
-      "host": "vpn391279314.opengw.net:1925",
-      "connect_s": 2.83,
-      "detail": {
-        "ip": "60.142.245.177",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Osaka",
-        "city": "Osaka",
-        "asn": "AS17676",
-        "org": "Japan Nation-wide Network of Softbank Corp.",
-        "timezone": "Asia/Tokyo",
-        "colo": "KIX",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn844508033.opengw.net:1558",
-      "host": "vpn844508033.opengw.net:1558",
-      "connect_s": 2.83,
-      "detail": {
-        "ip": "60.126.217.205",
+        "ip": "60.135.165.23",
         "country": "JP",
         "countryName": "Japan",
         "region": "Tokyo",
@@ -101,286 +74,113 @@
         "asn": "AS17676",
         "org": "Japan Nation-wide Network of Softbank Corp.",
         "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn482501676.opengw.net:1282",
-      "host": "vpn482501676.opengw.net:1282",
-      "connect_s": 2.83,
-      "detail": {
-        "ip": "126.122.153.76",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Gifu",
-        "city": "Gifu",
-        "asn": "AS17676",
-        "org": "Japan Nation-wide Network of Softbank Corp.",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn849985359.opengw.net:1773",
-      "host": "vpn849985359.opengw.net:1773",
-      "connect_s": 2.83,
-      "detail": {
-        "ip": "175.132.127.244",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Chiba",
-        "city": "Chiba",
-        "asn": "AS2516",
-        "org": "KDDI CORPORATION",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn844197835.opengw.net:1411",
-      "host": "vpn844197835.opengw.net:1411",
-      "connect_s": 3.23,
-      "detail": {
-        "ip": "180.198.4.253",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Shizuoka",
-        "city": "Fukuroi",
-        "asn": "AS18126",
-        "org": "Chubu Telecommunications Co.,Inc.",
-        "timezone": "Asia/Tokyo",
         "colo": "KIX",
         "src": "pool"
+      },
+      "score": 78.4,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.2,
+        "stable": 10.0,
+        "load": 2.6,
+        "conn": 1.6,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn771852693.opengw.net:1399",
-      "host": "vpn771852693.opengw.net:1399",
-      "connect_s": 3.23,
+      "sstp": "sstp://vpn:vpn@vpn569396308.opengw.net:1632",
+      "host": "vpn569396308.opengw.net:1632",
+      "connect_s": 2.83,
       "detail": {
-        "ip": "211.208.128.33",
+        "ip": "125.131.231.62",
         "country": "KR",
         "countryName": "South Korea",
-        "region": "Incheon",
-        "city": "Incheon",
-        "asn": "AS9318",
-        "org": "SK Broadband Co Ltd",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn100999266.opengw.net:1401",
-      "host": "vpn100999266.opengw.net:1401",
-      "connect_s": 3.23,
-      "detail": {
-        "ip": "222.14.54.111",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Okinawa",
-        "city": "Naha",
-        "asn": "AS2516",
-        "org": "DION (KDDI CORPORATION)",
-        "timezone": "Asia/Tokyo",
-        "colo": "KIX",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn109653562.opengw.net:1675",
-      "host": "vpn109653562.opengw.net:1675",
-      "connect_s": 3.23,
-      "detail": {
-        "ip": "144.91.151.96",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Hokkaido",
-        "city": "Asahikawa",
-        "asn": "AS131952",
-        "org": "Asahikawa Cable Television Co., Ltd.",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn382408128.opengw.net:1846",
-      "host": "vpn382408128.opengw.net:1846",
-      "connect_s": 3.23,
-      "detail": {
-        "ip": "112.163.161.150",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Gyeongsangnam-do",
-        "city": "Chinju",
+        "region": "Seoul",
+        "city": "Seoul",
         "asn": "AS4766",
         "org": "KT",
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
+      },
+      "score": 59.0,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.1,
+        "stable": 5.0,
+        "load": 2.9,
+        "conn": 1.5,
+        "kind": "unknown",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn514496438.opengw.net:995",
-      "host": "vpn514496438.opengw.net:995",
-      "connect_s": 3.23,
+      "sstp": "sstp://vpn:vpn@vpn805306369.opengw.net:1344",
+      "host": "vpn805306369.opengw.net:1344",
+      "connect_s": 2.83,
       "detail": {
-        "ip": "1.236.29.27",
+        "ip": "27.113.113.177",
         "country": "KR",
         "countryName": "South Korea",
-        "region": "Gyeonggi-do",
-        "city": "Goyang-si",
-        "asn": "AS9318",
-        "org": "SK Broadband Co Ltd",
+        "region": "Daegu",
+        "city": "Daegu",
+        "asn": "AS9781",
+        "org": "GREEN CABLE TELEVISION STATION",
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
+      },
+      "score": 75.4,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.9,
+        "uptime": 0.0,
+        "lat": 11.2,
+        "stable": 10.0,
+        "load": 2.8,
+        "conn": 1.5,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn981185492.opengw.net:1623",
-      "host": "vpn981185492.opengw.net:1623",
+      "sstp": "sstp://vpn:vpn@vpn176028958.opengw.net:1756",
+      "host": "vpn176028958.opengw.net:1756",
       "connect_s": 3.23,
       "detail": {
-        "ip": "122.199.109.234",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Gyeongsangbuk-do",
-        "city": "Gumi",
-        "asn": "AS9981",
-        "org": "kt HCN Co.,Ltd.",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
+        "ip": "119.171.255.242",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Saitama",
+        "city": "Saitama",
+        "asn": "AS9824",
+        "org": "JCOM Co., Ltd.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
         "src": "pool"
+      },
+      "score": 64.9,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.8,
+        "stable": 10.0,
+        "load": 2.1,
+        "conn": 1.5,
+        "kind": "unknown",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@public-vpn-214.opengw.net:443",
-      "host": "public-vpn-214.opengw.net:443",
+      "sstp": "sstp://vpn:vpn@public-vpn-233.opengw.net:443",
+      "host": "public-vpn-233.opengw.net:443",
       "connect_s": 3.24,
-      "detail": {
-        "ip": "219.100.37.245",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS36599",
-        "org": "SoftEther Corporation",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn762217117.opengw.net:1506",
-      "host": "vpn762217117.opengw.net:1506",
-      "connect_s": 3.64,
-      "detail": {
-        "ip": "125.49.19.133",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS2516",
-        "org": "KDDI CORPORATION",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn464858989.opengw.net:995",
-      "host": "vpn464858989.opengw.net:995",
-      "connect_s": 4.04,
-      "detail": {
-        "ip": "171.235.180.176",
-        "country": "VN",
-        "countryName": "Vietnam",
-        "region": "Ho Chi Minh City (HCMC)",
-        "city": "Ho Chi Minh City",
-        "asn": "AS7552",
-        "org": "Viettel Group",
-        "timezone": "Asia/Ho_Chi_Minh",
-        "colo": "HKG",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn410287983.opengw.net:995",
-      "host": "vpn410287983.opengw.net:995",
-      "connect_s": 4.04,
-      "detail": {
-        "ip": "103.67.199.89",
-        "country": "VN",
-        "countryName": "Vietnam",
-        "region": "Ho Chi Minh City (HCMC)",
-        "city": "Ho Chi Minh City",
-        "asn": "AS135918",
-        "org": "CAMERA-VIET TECHNOLOGY SOLUTIONS COMPANY LIMITED",
-        "timezone": "Asia/Ho_Chi_Minh",
-        "colo": "SIN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn954985259.opengw.net:1849",
-      "host": "vpn954985259.opengw.net:1849",
-      "connect_s": 4.04,
-      "detail": {
-        "ip": "223.205.189.142",
-        "country": "TH",
-        "countryName": "Thailand",
-        "region": "Phra Nakhon Si Ayutthaya",
-        "city": "Uthai",
-        "asn": "AS45758",
-        "org": "Advanced Wireless Network Company Limited",
-        "timezone": "Asia/Bangkok",
-        "colo": "BKK",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn653088547.opengw.net:1373",
-      "host": "vpn653088547.opengw.net:1373",
-      "connect_s": 4.83,
-      "detail": {
-        "ip": "23.242.215.86",
-        "country": "US",
-        "countryName": "United States",
-        "region": "California",
-        "city": "Burbank",
-        "asn": "AS20001",
-        "org": "Charter Communications Inc",
-        "timezone": "America/Los_Angeles",
-        "colo": "LAX",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@public-vpn-94.opengw.net:443",
-      "host": "public-vpn-94.opengw.net:443",
-      "connect_s": 5.23,
-      "detail": {
-        "ip": "219.100.37.236",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS36599",
-        "org": "SoftEther Corporation",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@public-vpn-184.opengw.net:443",
-      "host": "public-vpn-184.opengw.net:443",
-      "connect_s": 5.24,
       "detail": {
         "ip": "219.100.37.243",
         "country": "JP",
@@ -392,29 +192,24 @@
         "timezone": "Asia/Tokyo",
         "colo": "NRT",
         "src": "pool"
+      },
+      "score": 52.3,
+      "score_parts": {
+        "house": 4.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.0,
+        "stable": 10.0,
+        "load": 2.3,
+        "conn": 1.5,
+        "kind": "idc",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn188811855.opengw.net:1891",
-      "host": "vpn188811855.opengw.net:1891",
-      "connect_s": 5.24,
-      "detail": {
-        "ip": "126.88.122.179",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS17676",
-        "org": "Japan Nation-wide Network of Softbank Corp.",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@public-vpn-189.opengw.net:443",
-      "host": "public-vpn-189.opengw.net:443",
-      "connect_s": 5.24,
+      "sstp": "sstp://vpn:vpn@public-vpn-198.opengw.net:443",
+      "host": "public-vpn-198.opengw.net:443",
+      "connect_s": 3.63,
       "detail": {
         "ip": "219.100.37.244",
         "country": "JP",
@@ -426,12 +221,169 @@
         "timezone": "Asia/Tokyo",
         "colo": "NRT",
         "src": "pool"
+      },
+      "score": 49.9,
+      "score_parts": {
+        "house": 4.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.9,
+        "stable": 10.0,
+        "load": 0.1,
+        "conn": 1.4,
+        "kind": "idc",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn857437370.opengw.net:1300",
+      "host": "vpn857437370.opengw.net:1300",
+      "connect_s": 3.63,
+      "detail": {
+        "ip": "219.104.73.9",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Shiga",
+        "city": "Ōtsu",
+        "asn": "AS2527",
+        "org": "So-net Service",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX",
+        "src": "pool"
+      },
+      "score": 72.4,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.8,
+        "stable": 5.0,
+        "load": 1.2,
+        "conn": 1.4,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn596745634.opengw.net:1322",
+      "host": "vpn596745634.opengw.net:1322",
+      "connect_s": 3.64,
+      "detail": {
+        "ip": "49.251.253.48",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Osaka",
+        "city": "Osaka",
+        "asn": "AS9617",
+        "org": "JCOM Co., Ltd.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX",
+        "src": "pool"
+      },
+      "score": 65.1,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.3,
+        "stable": 10.0,
+        "load": 2.9,
+        "conn": 1.4,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn844508033.opengw.net:1558",
+      "host": "vpn844508033.opengw.net:1558",
+      "connect_s": 3.64,
+      "detail": {
+        "ip": "60.126.217.205",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 75.0,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 17.2,
+        "uptime": 0.0,
+        "lat": 14.5,
+        "stable": 10.0,
+        "load": 1.9,
+        "conn": 1.4,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn844197835.opengw.net:1411",
+      "host": "vpn844197835.opengw.net:1411",
+      "connect_s": 3.64,
+      "detail": {
+        "ip": "180.198.4.253",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Shizuoka",
+        "city": "Fukuroi",
+        "asn": "AS18126",
+        "org": "Chubu Telecommunications Co.,Inc.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX",
+        "src": "pool"
+      },
+      "score": 78.0,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.3,
+        "stable": 10.0,
+        "load": 2.3,
+        "conn": 1.4,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn410287983.opengw.net:995",
+      "host": "vpn410287983.opengw.net:995",
+      "connect_s": 4.43,
+      "detail": {
+        "ip": "103.67.199.89",
+        "country": "VN",
+        "countryName": "Vietnam",
+        "region": "Ho Chi Minh City (HCMC)",
+        "city": "Ho Chi Minh City",
+        "asn": "AS135918",
+        "org": "CAMERA-VIET TECHNOLOGY SOLUTIONS COMPANY LIMITED",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "colo": "SIN",
+        "src": "pool"
+      },
+      "score": 63.4,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 19.6,
+        "uptime": 0.0,
+        "lat": 13.5,
+        "stable": 10.0,
+        "load": 2.5,
+        "conn": 1.3,
+        "kind": "unknown",
+        "uptime_days": 0.0
       }
     },
     {
       "sstp": "sstp://vpn:vpn@public-vpn-68.opengw.net:443",
       "host": "public-vpn-68.opengw.net:443",
-      "connect_s": 5.24,
+      "connect_s": 5.23,
       "detail": {
         "ip": "219.100.37.234",
         "country": "JP",
@@ -443,31 +395,26 @@
         "timezone": "Asia/Tokyo",
         "colo": "NRT",
         "src": "pool"
+      },
+      "score": 51.8,
+      "score_parts": {
+        "house": 4.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.5,
+        "stable": 10.0,
+        "load": 1.7,
+        "conn": 1.1,
+        "kind": "idc",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn100779275.opengw.net:995",
-      "host": "vpn100779275.opengw.net:995",
-      "connect_s": 5.24,
+      "sstp": "sstp://vpn:vpn@public-vpn-214.opengw.net:443",
+      "host": "public-vpn-214.opengw.net:443",
+      "connect_s": 5.23,
       "detail": {
-        "ip": "211.63.136.119",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Seoul",
-        "city": "Seoul",
-        "asn": "AS4766",
-        "org": "Korea Telecom",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@public-vpn-148.opengw.net:443",
-      "host": "public-vpn-148.opengw.net:443",
-      "connect_s": 5.24,
-      "detail": {
-        "ip": "219.100.37.239",
+        "ip": "219.100.37.245",
         "country": "JP",
         "countryName": "Japan",
         "region": "Tokyo",
@@ -477,6 +424,105 @@
         "timezone": "Asia/Tokyo",
         "colo": "NRT",
         "src": "pool"
+      },
+      "score": 51.2,
+      "score_parts": {
+        "house": 4.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.7,
+        "stable": 10.0,
+        "load": 1.9,
+        "conn": 1.1,
+        "kind": "idc",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@public-vpn-156.opengw.net:443",
+      "host": "public-vpn-156.opengw.net:443",
+      "connect_s": 5.23,
+      "detail": {
+        "ip": "219.100.37.238",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS36599",
+        "org": "SoftEther Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 51.8,
+      "score_parts": {
+        "house": 4.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.4,
+        "stable": 10.0,
+        "load": 1.8,
+        "conn": 1.1,
+        "kind": "idc",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@public-vpn-119.opengw.net:443",
+      "host": "public-vpn-119.opengw.net:443",
+      "connect_s": 5.24,
+      "detail": {
+        "ip": "219.100.37.240",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS36599",
+        "org": "SoftEther Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 50.3,
+      "score_parts": {
+        "house": 4.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.4,
+        "stable": 10.0,
+        "load": 0.3,
+        "conn": 1.1,
+        "kind": "idc",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@public-vpn-201.opengw.net:443",
+      "host": "public-vpn-201.opengw.net:443",
+      "connect_s": 5.24,
+      "detail": {
+        "ip": "219.100.37.246",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS36599",
+        "org": "SoftEther Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 51.1,
+      "score_parts": {
+        "house": 4.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.3,
+        "stable": 10.0,
+        "load": 1.2,
+        "conn": 1.1,
+        "kind": "idc",
+        "uptime_days": 0.0
       }
     },
     {
@@ -494,12 +540,169 @@
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
+      },
+      "score": 63.8,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.5,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 1.1,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn188811855.opengw.net:1891",
+      "host": "vpn188811855.opengw.net:1891",
+      "connect_s": 5.24,
+      "detail": {
+        "ip": "126.88.122.179",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 76.9,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.6,
+        "stable": 10.0,
+        "load": 1.2,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn653088547.opengw.net:1373",
+      "host": "vpn653088547.opengw.net:1373",
+      "connect_s": 5.24,
+      "detail": {
+        "ip": "23.242.215.86",
+        "country": "US",
+        "countryName": "United States",
+        "region": "California",
+        "city": "Burbank",
+        "asn": "AS20001",
+        "org": "Charter Communications Inc",
+        "timezone": "America/Los_Angeles",
+        "colo": "LAX",
+        "src": "pool"
+      },
+      "score": 76.7,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.8,
+        "stable": 10.0,
+        "load": 1.8,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn509708696.opengw.net:1884",
+      "host": "vpn509708696.opengw.net:1884",
+      "connect_s": 5.25,
+      "detail": {
+        "ip": "60.103.49.124",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Kanagawa",
+        "city": "Yokohama",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 73.3,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.6,
+        "stable": 5.0,
+        "load": 2.6,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn882137641.opengw.net:1648",
+      "host": "vpn882137641.opengw.net:1648",
+      "connect_s": 5.63,
+      "detail": {
+        "ip": "125.55.149.142",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Saga",
+        "city": "Imarichō-kō",
+        "asn": "AS2516",
+        "org": "DION (KDDI CORPORATION)",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX",
+        "src": "pool"
+      },
+      "score": 77.7,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.2,
+        "stable": 10.0,
+        "load": 2.4,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn100779275.opengw.net:995",
+      "host": "vpn100779275.opengw.net:995",
+      "connect_s": 5.64,
+      "detail": {
+        "ip": "211.63.136.119",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Seoul",
+        "city": "Seoul",
+        "asn": "AS4766",
+        "org": "Korea Telecom",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 77.1,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.9,
+        "uptime": 0.0,
+        "lat": 13.4,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
       "sstp": "sstp://vpn:vpn@vpn473388778.opengw.net:1889",
       "host": "vpn473388778.opengw.net:1889",
-      "connect_s": 5.24,
+      "connect_s": 5.64,
       "detail": {
         "ip": "60.96.219.14",
         "country": "JP",
@@ -511,108 +714,18 @@
         "timezone": "Asia/Tokyo",
         "colo": "KIX",
         "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@laud.opengw.net:443",
-      "host": "laud.opengw.net:443",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "187.15.134.162",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS137409",
-        "org": "Packethub Japan",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@public-vpn-119.opengw.net:443",
-      "host": "public-vpn-119.opengw.net:443",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "219.100.37.240",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS36599",
-        "org": "SoftEther Corporation",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn143703231.opengw.net:1372",
-      "host": "vpn143703231.opengw.net:1372",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "118.237.36.183",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS2527",
-        "org": "Sony Network Communications Inc.",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn167421173.opengw.net:1771",
-      "host": "vpn167421173.opengw.net:1771",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "122.16.186.38",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS4713",
-        "org": "Open Computer Network",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn250920860.opengw.net:1895",
-      "host": "vpn250920860.opengw.net:1895",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "210.198.250.157",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Hokkaido",
-        "city": "Obihiro",
-        "asn": "AS2516",
-        "org": "KDDI CORPORATION",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn258254532.opengw.net:1548",
-      "host": "vpn258254532.opengw.net:1548",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "124.47.69.253",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Okayama",
-        "city": "Kurashiki",
-        "asn": "AS9622",
-        "org": "Kurashiki Cable TV Corporation",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
+      },
+      "score": 75.6,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 18.1,
+        "uptime": 0.0,
+        "lat": 14.0,
+        "stable": 10.0,
+        "load": 2.4,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
@@ -630,114 +743,111 @@
         "timezone": "Europe/Rome",
         "colo": "MXP",
         "src": "pool"
+      },
+      "score": 56.6,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 12.7,
+        "uptime": 0.0,
+        "lat": 13.9,
+        "stable": 10.0,
+        "load": 2.4,
+        "conn": 1.1,
+        "kind": "unknown",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn540491747.opengw.net:1811",
-      "host": "vpn540491747.opengw.net:1811",
+      "sstp": "sstp://vpn:vpn@vpn258254532.opengw.net:1548",
+      "host": "vpn258254532.opengw.net:1548",
       "connect_s": 5.64,
       "detail": {
-        "ip": "39.110.50.237",
+        "ip": "124.47.69.253",
         "country": "JP",
         "countryName": "Japan",
-        "region": "Ibaraki",
-        "city": "Hitachi",
-        "asn": "AS2527",
-        "org": "So-net Service",
+        "region": "Okayama",
+        "city": "Kurashiki",
+        "asn": "AS9622",
+        "org": "Kurashiki Cable TV Corporation",
         "timezone": "Asia/Tokyo",
         "colo": "NRT",
         "src": "pool"
+      },
+      "score": 77.9,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.8,
+        "uptime": 0.0,
+        "lat": 14.6,
+        "stable": 10.0,
+        "load": 2.4,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn586698509.opengw.net:1315",
-      "host": "vpn586698509.opengw.net:1315",
+      "sstp": "sstp://vpn:vpn@vpn391279314.opengw.net:1925",
+      "host": "vpn391279314.opengw.net:1925",
       "connect_s": 5.64,
       "detail": {
-        "ip": "49.250.0.186",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Hyōgo",
-        "city": "Ashiya",
-        "asn": "AS9617",
-        "org": "JCOM Co., Ltd.",
-        "timezone": "Asia/Tokyo",
-        "colo": "KIX",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn639356368.opengw.net:1600",
-      "host": "vpn639356368.opengw.net:1600",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "175.210.238.10",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Gyeonggi-do",
-        "city": "Suwon",
-        "asn": "AS4766",
-        "org": "KT",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn711677985.opengw.net:1730",
-      "host": "vpn711677985.opengw.net:1730",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "60.126.0.2",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS17676",
-        "org": "Japan Nation-wide Network of Softbank Corp.",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn851717986.opengw.net:1684",
-      "host": "vpn851717986.opengw.net:1684",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "126.79.197.198",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS17676",
-        "org": "Japan Nation-wide Network of Softbank Corp.",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn244638209.opengw.net:1942",
-      "host": "vpn244638209.opengw.net:1942",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "180.147.128.118",
+        "ip": "60.142.245.177",
         "country": "JP",
         "countryName": "Japan",
         "region": "Osaka",
         "city": "Osaka",
-        "asn": "AS17511",
-        "org": "OPTAGE Inc.",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
         "timezone": "Asia/Tokyo",
         "colo": "KIX",
         "src": "pool"
+      },
+      "score": 78.6,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.7,
+        "stable": 10.0,
+        "load": 2.8,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn124650850.opengw.net:1577",
+      "host": "vpn124650850.opengw.net:1577",
+      "connect_s": 5.65,
+      "detail": {
+        "ip": "49.129.225.214",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Kanagawa",
+        "city": "Yokohama",
+        "asn": "AS2518",
+        "org": "BIGLOBE Inc.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 64.6,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 19.7,
+        "uptime": 0.0,
+        "lat": 14.5,
+        "stable": 10.0,
+        "load": 2.8,
+        "conn": 1.1,
+        "kind": "unknown",
+        "uptime_days": 0.0
       }
     },
     {
       "sstp": "sstp://vpn:vpn@vpn150365618.opengw.net:1680",
       "host": "vpn150365618.opengw.net:1680",
-      "connect_s": 5.64,
+      "connect_s": 5.65,
       "detail": {
         "ip": "60.73.48.68",
         "country": "JP",
@@ -749,159 +859,18 @@
         "timezone": "Asia/Tokyo",
         "colo": "NRT",
         "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn195786351.opengw.net:1629",
-      "host": "vpn195786351.opengw.net:1629",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "60.94.36.8",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS17676",
-        "org": "Japan Nation-wide Network of Softbank Corp.",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn237073649.opengw.net:1507",
-      "host": "vpn237073649.opengw.net:1507",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "106.155.69.27",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Kanagawa",
-        "city": "Yokohama",
-        "asn": "AS2516",
-        "org": "KDDI CORPORATION",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn255867577.opengw.net:1234",
-      "host": "vpn255867577.opengw.net:1234",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "222.9.248.255",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Aichi",
-        "city": "Okazaki",
-        "asn": "AS18126",
-        "org": "Chubu Telecommunications Co.,Inc.",
-        "timezone": "Asia/Tokyo",
-        "colo": "KIX",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn327787550.opengw.net:1884",
-      "host": "vpn327787550.opengw.net:1884",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "126.28.236.144",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Osaka",
-        "city": "Osaka",
-        "asn": "AS17676",
-        "org": "Japan Nation-wide Network of Softbank Corp.",
-        "timezone": "Asia/Tokyo",
-        "colo": "KIX",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn350782353.opengw.net:1962",
-      "host": "vpn350782353.opengw.net:1962",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "116.64.86.146",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS9824",
-        "org": "JCOM Co., Ltd.",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn500462083.opengw.net:1754",
-      "host": "vpn500462083.opengw.net:1754",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "106.179.195.53",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Kita",
-        "asn": "AS2516",
-        "org": "KDDI CORPORATION",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn882137641.opengw.net:1648",
-      "host": "vpn882137641.opengw.net:1648",
-      "connect_s": 5.64,
-      "detail": {
-        "ip": "125.55.149.142",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Saga",
-        "city": "Imarichō-kō",
-        "asn": "AS2516",
-        "org": "DION (KDDI CORPORATION)",
-        "timezone": "Asia/Tokyo",
-        "colo": "KIX",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn111698412.opengw.net:1743",
-      "host": "vpn111698412.opengw.net:1743",
-      "connect_s": 5.65,
-      "detail": {
-        "ip": "112.214.34.62",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Seoul",
-        "city": "Seoul",
-        "asn": "AS10036",
-        "org": "DLIVE Guro Cable TV",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn146757892.opengw.net:1322",
-      "host": "vpn146757892.opengw.net:1322",
-      "connect_s": 5.65,
-      "detail": {
-        "ip": "121.81.233.178",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Osaka",
-        "city": "Osaka",
-        "asn": "AS17511",
-        "org": "OPTAGE Inc.",
-        "timezone": "Asia/Tokyo",
-        "colo": "KIX",
-        "src": "pool"
+      },
+      "score": 78.3,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.8,
+        "uptime": 0.0,
+        "lat": 14.5,
+        "stable": 10.0,
+        "load": 2.9,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
@@ -919,159 +888,134 @@
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
+      },
+      "score": 61.9,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 18.1,
+        "uptime": 0.0,
+        "lat": 13.3,
+        "stable": 10.0,
+        "load": 2.9,
+        "conn": 1.1,
+        "kind": "unknown",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn176028958.opengw.net:1756",
-      "host": "vpn176028958.opengw.net:1756",
+      "sstp": "sstp://vpn:vpn@vpn255867577.opengw.net:1234",
+      "host": "vpn255867577.opengw.net:1234",
       "connect_s": 5.65,
       "detail": {
-        "ip": "119.171.255.242",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Saitama",
-        "city": "Saitama",
-        "asn": "AS9824",
-        "org": "JCOM Co., Ltd.",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn254625614.opengw.net:1728",
-      "host": "vpn254625614.opengw.net:1728",
-      "connect_s": 5.65,
-      "detail": {
-        "ip": "118.106.213.125",
+        "ip": "222.9.248.255",
         "country": "JP",
         "countryName": "Japan",
         "region": "Aichi",
-        "city": "Toyohashi",
+        "city": "Okazaki",
         "asn": "AS18126",
         "org": "Chubu Telecommunications Co.,Inc.",
         "timezone": "Asia/Tokyo",
         "colo": "KIX",
         "src": "pool"
+      },
+      "score": 78.2,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.4,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn302973296.opengw.net:1333",
-      "host": "vpn302973296.opengw.net:1333",
+      "sstp": "sstp://vpn:vpn@vpn327787550.opengw.net:1884",
+      "host": "vpn327787550.opengw.net:1884",
       "connect_s": 5.65,
       "detail": {
-        "ip": "61.82.162.106",
+        "ip": "126.28.236.144",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Osaka",
+        "city": "Osaka",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX",
+        "src": "pool"
+      },
+      "score": 78.5,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.9,
+        "stable": 10.0,
+        "load": 2.5,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn540491747.opengw.net:1811",
+      "host": "vpn540491747.opengw.net:1811",
+      "connect_s": 5.65,
+      "detail": {
+        "ip": "39.110.50.237",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Ibaraki",
+        "city": "Hitachi",
+        "asn": "AS2527",
+        "org": "So-net Service",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 77.2,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.6,
+        "stable": 10.0,
+        "load": 1.5,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn607845372.opengw.net:995",
+      "host": "vpn607845372.opengw.net:995",
+      "connect_s": 5.65,
+      "detail": {
+        "ip": "222.113.226.237",
         "country": "KR",
         "countryName": "South Korea",
-        "region": "Seoul",
-        "city": "Seoul",
+        "region": "Gangwon-do",
+        "city": "Sokcho",
         "asn": "AS4766",
         "org": "Korea Telecom",
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn466639974.opengw.net:1659",
-      "host": "vpn466639974.opengw.net:1659",
-      "connect_s": 5.65,
-      "detail": {
-        "ip": "121.106.135.81",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tochigi",
-        "city": "Utsunomiya",
-        "asn": "AS2516",
-        "org": "DION (KDDI CORPORATION)",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn479254153.opengw.net:1841",
-      "host": "vpn479254153.opengw.net:1841",
-      "connect_s": 5.65,
-      "detail": {
-        "ip": "60.61.28.14",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Saitama",
-        "city": "Kasukabe",
-        "asn": "AS9824",
-        "org": "JCOM Co., Ltd.",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn530832853.opengw.net:1795",
-      "host": "vpn530832853.opengw.net:1795",
-      "connect_s": 5.65,
-      "detail": {
-        "ip": "111.238.154.218",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS2516",
-        "org": "KDDI CORPORATION",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn596745634.opengw.net:1322",
-      "host": "vpn596745634.opengw.net:1322",
-      "connect_s": 5.65,
-      "detail": {
-        "ip": "49.251.253.48",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Osaka",
-        "city": "Osaka",
-        "asn": "AS9617",
-        "org": "JCOM Co., Ltd.",
-        "timezone": "Asia/Tokyo",
-        "colo": "KIX",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn622613092.opengw.net:1496",
-      "host": "vpn622613092.opengw.net:1496",
-      "connect_s": 5.65,
-      "detail": {
-        "ip": "124.100.138.216",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Aichi",
-        "city": "Nagoya",
-        "asn": "AS4713",
-        "org": "Open Computer Network",
-        "timezone": "Asia/Tokyo",
-        "colo": "KIX",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn648577383.opengw.net:1805",
-      "host": "vpn648577383.opengw.net:1805",
-      "connect_s": 5.65,
-      "detail": {
-        "ip": "60.93.161.98",
-        "country": "JP",
-        "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Tokyo",
-        "asn": "AS17676",
-        "org": "Japan Nation-wide Network of Softbank Corp.",
-        "timezone": "Asia/Tokyo",
-        "colo": "NRT",
-        "src": "pool"
+      },
+      "score": 76.6,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.0,
+        "stable": 10.0,
+        "load": 2.5,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
@@ -1089,295 +1033,337 @@
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
+      },
+      "score": 71.4,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 15.8,
+        "uptime": 0.0,
+        "lat": 13.5,
+        "stable": 10.0,
+        "load": 1.0,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn863787247.opengw.net:1575",
-      "host": "vpn863787247.opengw.net:1575",
+      "sstp": "sstp://vpn:vpn@vpn851717986.opengw.net:1684",
+      "host": "vpn851717986.opengw.net:1684",
       "connect_s": 5.65,
       "detail": {
-        "ip": "180.196.229.114",
+        "ip": "126.79.197.198",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 77.7,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.7,
+        "stable": 10.0,
+        "load": 1.9,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn223473667.opengw.net:1822",
+      "host": "vpn223473667.opengw.net:1822",
+      "connect_s": 5.65,
+      "detail": {
+        "ip": "60.75.38.101",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Hokkaido",
+        "city": "Sapporo",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX",
+        "src": "pool"
+      },
+      "score": 77.3,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.1,
+        "uptime": 0.0,
+        "lat": 14.5,
+        "stable": 11.2,
+        "load": 1.4,
+        "conn": 1.1,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn143703231.opengw.net:1372",
+      "host": "vpn143703231.opengw.net:1372",
+      "connect_s": 6.03,
+      "detail": {
+        "ip": "118.237.36.183",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS2527",
+        "org": "Sony Network Communications Inc.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 77.5,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.6,
+        "stable": 10.0,
+        "load": 1.9,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn167421173.opengw.net:1771",
+      "host": "vpn167421173.opengw.net:1771",
+      "connect_s": 6.03,
+      "detail": {
+        "ip": "122.16.186.38",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS4713",
+        "org": "Open Computer Network",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 78.5,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.8,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@public-vpn-114.opengw.net:443",
+      "host": "public-vpn-114.opengw.net:443",
+      "connect_s": 6.04,
+      "detail": {
+        "ip": "219.100.37.236",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS36599",
+        "org": "SoftEther Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 52.3,
+      "score_parts": {
+        "house": 4.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.6,
+        "stable": 11.2,
+        "load": 2.0,
+        "conn": 1.0,
+        "kind": "idc",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn164761694.opengw.net:1814",
+      "host": "vpn164761694.opengw.net:1814",
+      "connect_s": 6.04,
+      "detail": {
+        "ip": "80.115.95.115",
+        "country": "NL",
+        "countryName": "Netherlands",
+        "region": "Limburg",
+        "city": "Sittard",
+        "asn": "AS33915",
+        "org": "Ziggo Consumers",
+        "timezone": "Europe/Amsterdam",
+        "colo": "AMS",
+        "src": "pool"
+      },
+      "score": 77.8,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.2,
+        "stable": 10.0,
+        "load": 2.6,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn254625614.opengw.net:1728",
+      "host": "vpn254625614.opengw.net:1728",
+      "connect_s": 6.04,
+      "detail": {
+        "ip": "118.106.213.125",
         "country": "JP",
         "countryName": "Japan",
         "region": "Aichi",
-        "city": "Nagoya",
+        "city": "Toyohashi",
         "asn": "AS18126",
         "org": "Chubu Telecommunications Co.,Inc.",
         "timezone": "Asia/Tokyo",
         "colo": "KIX",
         "src": "pool"
+      },
+      "score": 78.3,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.5,
+        "stable": 10.0,
+        "load": 2.8,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn584377130.opengw.net:1822",
-      "host": "vpn584377130.opengw.net:1822",
-      "connect_s": 5.65,
+      "sstp": "sstp://vpn:vpn@vpn466639974.opengw.net:1659",
+      "host": "vpn466639974.opengw.net:1659",
+      "connect_s": 6.04,
       "detail": {
-        "ip": "14.14.148.93",
+        "ip": "121.106.135.81",
         "country": "JP",
         "countryName": "Japan",
-        "region": "Tokyo",
-        "city": "Hachiōji",
-        "asn": "AS131933",
-        "org": "TAMA Television Co., Ltd",
+        "region": "Tochigi",
+        "city": "Utsunomiya",
+        "asn": "AS2516",
+        "org": "DION (KDDI CORPORATION)",
         "timezone": "Asia/Tokyo",
         "colo": "NRT",
         "src": "pool"
+      },
+      "score": 78.0,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.5,
+        "stable": 10.0,
+        "load": 2.5,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn152353045.opengw.net:1848",
-      "host": "vpn152353045.opengw.net:1848",
+      "sstp": "sstp://vpn:vpn@vpn585902674.opengw.net:1981",
+      "host": "vpn585902674.opengw.net:1981",
       "connect_s": 6.04,
       "detail": {
-        "ip": "211.200.79.121",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Seoul",
-        "city": "Seoul",
-        "asn": "AS9318",
-        "org": "SK Broadband Co Ltd",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn215249031.opengw.net:995",
-      "host": "vpn215249031.opengw.net:995",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "221.168.149.24",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Incheon",
-        "city": "Incheon",
-        "asn": "AS4766",
-        "org": "Korea Telecom",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn333824249.opengw.net:995",
-      "host": "vpn333824249.opengw.net:995",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "106.250.211.111",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Seoul",
-        "city": "Seoul",
-        "asn": "AS3786",
-        "org": "LG DACOM Corporation",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn362823699.opengw.net:1436",
-      "host": "vpn362823699.opengw.net:1436",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "122.254.245.109",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Busan",
-        "city": "Busan",
-        "asn": "AS17857",
-        "org": "SK Broadband Co Ltd",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn386579301.opengw.net:995",
-      "host": "vpn386579301.opengw.net:995",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "211.215.238.48",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Incheon",
-        "city": "Incheon",
-        "asn": "AS9318",
-        "org": "SK Broadband Co Ltd",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn561268334.opengw.net:1597",
-      "host": "vpn561268334.opengw.net:1597",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "211.63.204.240",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Seoul",
-        "city": "Seoul",
-        "asn": "AS4766",
-        "org": "Korea Telecom",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn607845372.opengw.net:995",
-      "host": "vpn607845372.opengw.net:995",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "222.113.226.237",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Gangwon-do",
-        "city": "Sokcho",
-        "asn": "AS4766",
-        "org": "Korea Telecom",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn805306369.opengw.net:1344",
-      "host": "vpn805306369.opengw.net:1344",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "27.113.113.177",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Daegu",
-        "city": "Daegu",
-        "asn": "AS9781",
-        "org": "GREEN CABLE TELEVISION STATION",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn915688854.opengw.net:1929",
-      "host": "vpn915688854.opengw.net:1929",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "121.149.221.10",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Jeollanam-do",
-        "city": "Yeosu",
-        "asn": "AS4766",
-        "org": "Korea Telecom",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn414350235.opengw.net:1446",
-      "host": "vpn414350235.opengw.net:1446",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "14.56.110.143",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Gyeonggi-do",
-        "city": "Munsan",
-        "asn": "AS4766",
-        "org": "Korea Telecom",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn598656241.opengw.net:1461",
-      "host": "vpn598656241.opengw.net:1461",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "218.155.224.47",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Gyeonggi-do",
-        "city": "Seongnam-si",
-        "asn": "AS4766",
-        "org": "Korea Telecom",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn676945411.opengw.net:1236",
-      "host": "vpn676945411.opengw.net:1236",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "182.226.193.209",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Daejeon",
-        "city": "Daejeon",
-        "asn": "AS17858",
-        "org": "LG POWERCOMM",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn710136103.opengw.net:995",
-      "host": "vpn710136103.opengw.net:995",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "115.21.28.168",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Seoul",
-        "city": "Seoul",
-        "asn": "AS4766",
-        "org": "Korea Telecom",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn717671506.opengw.net:1870",
-      "host": "vpn717671506.opengw.net:1870",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "113.145.237.167",
+        "ip": "210.1.174.80",
         "country": "JP",
         "countryName": "Japan",
-        "region": "Okinawa",
-        "city": "Okinawa",
+        "region": "Hyōgo",
+        "city": "Amagasaki",
+        "asn": "AS7524",
+        "org": "ITEC HANSHIN CO.,LTD.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 57.5,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 18.2,
+        "uptime": 0.0,
+        "lat": 13.8,
+        "stable": 5.0,
+        "load": 3.0,
+        "conn": 1.0,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn711677985.opengw.net:1730",
+      "host": "vpn711677985.opengw.net:1730",
+      "connect_s": 6.04,
+      "detail": {
+        "ip": "60.126.0.2",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 77.3,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.7,
+        "stable": 10.0,
+        "load": 1.6,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn762217117.opengw.net:1506",
+      "host": "vpn762217117.opengw.net:1506",
+      "connect_s": 6.04,
+      "detail": {
+        "ip": "125.49.19.133",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
         "asn": "AS2516",
         "org": "KDDI CORPORATION",
         "timezone": "Asia/Tokyo",
-        "colo": "KIX",
+        "colo": "NRT",
         "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn893972689.opengw.net:1934",
-      "host": "vpn893972689.opengw.net:1934",
-      "connect_s": 6.04,
-      "detail": {
-        "ip": "121.186.118.191",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Jeollabuk-do",
-        "city": "Jeonju",
-        "asn": "AS4766",
-        "org": "Korea Telecom",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
+      },
+      "score": 78.3,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.9,
+        "stable": 10.0,
+        "load": 2.4,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
@@ -1395,80 +1381,82 @@
         "timezone": "Asia/Tokyo",
         "colo": "KIX",
         "src": "pool"
+      },
+      "score": 64.7,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.3,
+        "stable": 10.0,
+        "load": 2.9,
+        "conn": 1.0,
+        "kind": "unknown",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn857468917.opengw.net:1535",
-      "host": "vpn857468917.opengw.net:1535",
+      "sstp": "sstp://vpn:vpn@vpn622613092.opengw.net:1496",
+      "host": "vpn622613092.opengw.net:1496",
       "connect_s": 6.04,
       "detail": {
-        "ip": "182.20.240.27",
+        "ip": "124.100.138.216",
         "country": "JP",
         "countryName": "Japan",
         "region": "Aichi",
         "city": "Nagoya",
-        "asn": "AS10010",
-        "org": "TOKAI Communications Corporation",
+        "asn": "AS4713",
+        "org": "Open Computer Network",
         "timezone": "Asia/Tokyo",
         "colo": "KIX",
         "src": "pool"
+      },
+      "score": 78.2,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.7,
+        "stable": 10.0,
+        "load": 2.5,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn223473667.opengw.net:1822",
-      "host": "vpn223473667.opengw.net:1822",
+      "sstp": "sstp://vpn:vpn@vpn244638209.opengw.net:1942",
+      "host": "vpn244638209.opengw.net:1942",
       "connect_s": 6.04,
       "detail": {
-        "ip": "60.75.38.101",
+        "ip": "180.147.128.118",
         "country": "JP",
         "countryName": "Japan",
-        "region": "Hokkaido",
-        "city": "Sapporo",
-        "asn": "AS17676",
-        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "region": "Osaka",
+        "city": "Osaka",
+        "asn": "AS17511",
+        "org": "OPTAGE Inc.",
         "timezone": "Asia/Tokyo",
         "colo": "KIX",
         "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn110532732.opengw.net:995",
-      "host": "vpn110532732.opengw.net:995",
-      "connect_s": 6.05,
-      "detail": {
-        "ip": "222.97.185.245",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Busan",
-        "city": "Busan",
-        "asn": "AS4766",
-        "org": "KT",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn953140495.opengw.net:995",
-      "host": "vpn953140495.opengw.net:995",
-      "connect_s": 6.05,
-      "detail": {
-        "ip": "175.195.243.160",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Gyeonggi-do",
-        "city": "Suwon",
-        "asn": "AS4766",
-        "org": "Korea Telecom",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
+      },
+      "score": 78.7,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.7,
+        "stable": 11.2,
+        "load": 1.8,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
       "sstp": "sstp://vpn:vpn@vpn107768805.opengw.net:995",
       "host": "vpn107768805.opengw.net:995",
-      "connect_s": 6.05,
+      "connect_s": 6.04,
       "detail": {
         "ip": "221.146.158.56",
         "country": "KR",
@@ -1480,6 +1468,163 @@
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
+      },
+      "score": 75.8,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.2,
+        "uptime": 0.0,
+        "lat": 13.1,
+        "stable": 10.0,
+        "load": 2.5,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn215249031.opengw.net:995",
+      "host": "vpn215249031.opengw.net:995",
+      "connect_s": 6.04,
+      "detail": {
+        "ip": "221.168.149.24",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Incheon",
+        "city": "Incheon",
+        "asn": "AS4766",
+        "org": "Korea Telecom",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 71.5,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 14.6,
+        "uptime": 0.0,
+        "lat": 13.1,
+        "stable": 10.0,
+        "load": 2.8,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn479254153.opengw.net:1841",
+      "host": "vpn479254153.opengw.net:1841",
+      "connect_s": 6.04,
+      "detail": {
+        "ip": "60.61.28.14",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Saitama",
+        "city": "Kasukabe",
+        "asn": "AS9824",
+        "org": "JCOM Co., Ltd.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 62.1,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 19.2,
+        "uptime": 0.0,
+        "lat": 13.3,
+        "stable": 10.0,
+        "load": 2.1,
+        "conn": 1.0,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn598656241.opengw.net:1461",
+      "host": "vpn598656241.opengw.net:1461",
+      "connect_s": 6.04,
+      "detail": {
+        "ip": "218.155.224.47",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Gyeonggi-do",
+        "city": "Seongnam-si",
+        "asn": "AS4766",
+        "org": "Korea Telecom",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 76.6,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.1,
+        "stable": 10.0,
+        "load": 2.5,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn710136103.opengw.net:995",
+      "host": "vpn710136103.opengw.net:995",
+      "connect_s": 6.04,
+      "detail": {
+        "ip": "115.21.28.168",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Seoul",
+        "city": "Seoul",
+        "asn": "AS4766",
+        "org": "Korea Telecom",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 69.8,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 12.7,
+        "uptime": 0.0,
+        "lat": 13.3,
+        "stable": 10.0,
+        "load": 2.8,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn893972689.opengw.net:1934",
+      "host": "vpn893972689.opengw.net:1934",
+      "connect_s": 6.04,
+      "detail": {
+        "ip": "121.186.118.191",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Jeollabuk-do",
+        "city": "Jeonju",
+        "asn": "AS4766",
+        "org": "Korea Telecom",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 74.9,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.5,
+        "uptime": 0.0,
+        "lat": 13.1,
+        "stable": 10.0,
+        "load": 1.3,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
@@ -1497,108 +1642,134 @@
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
+      },
+      "score": 76.6,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.5,
+        "stable": 10.0,
+        "load": 2.1,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn210075524.opengw.net:1774",
-      "host": "vpn210075524.opengw.net:1774",
+      "sstp": "sstp://vpn:vpn@vpn500462083.opengw.net:1754",
+      "host": "vpn500462083.opengw.net:1754",
       "connect_s": 6.05,
       "detail": {
-        "ip": "125.11.100.23",
+        "ip": "106.179.195.53",
         "country": "JP",
         "countryName": "Japan",
-        "region": "Osaka",
-        "city": "Sakai",
-        "asn": "AS9824",
-        "org": "JCOM Co., Ltd.",
+        "region": "Tokyo",
+        "city": "Kita",
+        "asn": "AS2516",
+        "org": "KDDI CORPORATION",
         "timezone": "Asia/Tokyo",
-        "colo": "KIX",
+        "colo": "NRT",
         "src": "pool"
+      },
+      "score": 78.2,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.8,
+        "uptime": 0.0,
+        "lat": 14.9,
+        "stable": 10.0,
+        "load": 2.5,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn545203829.opengw.net:995",
-      "host": "vpn545203829.opengw.net:995",
+      "sstp": "sstp://vpn:vpn@vpn564415042.opengw.net:1854",
+      "host": "vpn564415042.opengw.net:1854",
       "connect_s": 6.05,
       "detail": {
-        "ip": "211.37.90.166",
+        "ip": "121.128.114.134",
         "country": "KR",
         "countryName": "South Korea",
-        "region": "Gyeonggi-do",
-        "city": "Anyang-si",
-        "asn": "AS9318",
-        "org": "SK Broadband Co Ltd",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn572913186.opengw.net:1609",
-      "host": "vpn572913186.opengw.net:1609",
-      "connect_s": 6.05,
-      "detail": {
-        "ip": "220.84.236.107",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Busan",
-        "city": "Busan",
-        "asn": "AS4766",
-        "org": "KT",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn890053288.opengw.net:995",
-      "host": "vpn890053288.opengw.net:995",
-      "connect_s": 6.05,
-      "detail": {
-        "ip": "14.45.163.241",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Gyeongsangbuk-do",
-        "city": "Yeongju",
+        "region": "Seoul",
+        "city": "Seoul",
         "asn": "AS4766",
         "org": "Korea Telecom",
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
+      },
+      "score": 76.2,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.3,
+        "uptime": 0.0,
+        "lat": 13.0,
+        "stable": 10.0,
+        "load": 2.9,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn922041785.opengw.net:1435",
-      "host": "vpn922041785.opengw.net:1435",
+      "sstp": "sstp://vpn:vpn@vpn584377130.opengw.net:1822",
+      "host": "vpn584377130.opengw.net:1822",
       "connect_s": 6.05,
       "detail": {
-        "ip": "121.189.231.253",
-        "country": "KR",
-        "countryName": "South Korea",
-        "region": "Gangwon-do",
-        "city": "Gangneung",
-        "asn": "AS4766",
-        "org": "KT",
-        "timezone": "Asia/Seoul",
-        "colo": "ICN",
-        "src": "pool"
-      }
-    },
-    {
-      "sstp": "sstp://vpn:vpn@vpn124650850.opengw.net:1577",
-      "host": "vpn124650850.opengw.net:1577",
-      "connect_s": 6.05,
-      "detail": {
-        "ip": "49.129.225.214",
+        "ip": "14.14.148.93",
         "country": "JP",
         "countryName": "Japan",
-        "region": "Kanagawa",
-        "city": "Yokohama",
-        "asn": "AS2518",
-        "org": "BIGLOBE Inc.",
+        "region": "Tokyo",
+        "city": "Hachiōji",
+        "asn": "AS131933",
+        "org": "TAMA Television Co., Ltd",
         "timezone": "Asia/Tokyo",
         "colo": "NRT",
         "src": "pool"
+      },
+      "score": 64.2,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 19.1,
+        "uptime": 0.0,
+        "lat": 14.9,
+        "stable": 11.2,
+        "load": 1.5,
+        "conn": 1.0,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn849985359.opengw.net:1773",
+      "host": "vpn849985359.opengw.net:1773",
+      "connect_s": 6.05,
+      "detail": {
+        "ip": "175.132.127.244",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Chiba",
+        "city": "Chiba",
+        "asn": "AS2516",
+        "org": "KDDI CORPORATION",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 77.7,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.9,
+        "stable": 10.0,
+        "load": 1.8,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
@@ -1616,6 +1787,482 @@
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
+      },
+      "score": 68.5,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 11.6,
+        "uptime": 0.0,
+        "lat": 13.1,
+        "stable": 10.0,
+        "load": 2.8,
+        "conn": 1.0,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn981185492.opengw.net:1623",
+      "host": "vpn981185492.opengw.net:1623",
+      "connect_s": 6.05,
+      "detail": {
+        "ip": "122.199.109.234",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Gyeongsangbuk-do",
+        "city": "Gumi",
+        "asn": "AS9981",
+        "org": "kt HCN Co.,Ltd.",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 61.2,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 18.8,
+        "uptime": 0.0,
+        "lat": 13.0,
+        "stable": 10.0,
+        "load": 1.9,
+        "conn": 1.0,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn250920860.opengw.net:1895",
+      "host": "vpn250920860.opengw.net:1895",
+      "connect_s": 6.43,
+      "detail": {
+        "ip": "210.198.250.157",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Hokkaido",
+        "city": "Obihiro",
+        "asn": "AS2516",
+        "org": "KDDI CORPORATION",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 75.9,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.9,
+        "stable": 10.0,
+        "load": 1.1,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn382408128.opengw.net:1846",
+      "host": "vpn382408128.opengw.net:1846",
+      "connect_s": 6.43,
+      "detail": {
+        "ip": "112.163.161.150",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Gyeongsangnam-do",
+        "city": "Chinju",
+        "asn": "AS4766",
+        "org": "KT",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 50.3,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 19.9,
+        "uptime": 0.0,
+        "lat": 0.0,
+        "stable": 10.0,
+        "load": 3.0,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn111698412.opengw.net:1743",
+      "host": "vpn111698412.opengw.net:1743",
+      "connect_s": 6.44,
+      "detail": {
+        "ip": "112.214.34.62",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Seoul",
+        "city": "Seoul",
+        "asn": "AS10036",
+        "org": "DLIVE Guro Cable TV",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 75.9,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.8,
+        "uptime": 0.0,
+        "lat": 13.0,
+        "stable": 10.0,
+        "load": 2.2,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn210075524.opengw.net:1774",
+      "host": "vpn210075524.opengw.net:1774",
+      "connect_s": 6.44,
+      "detail": {
+        "ip": "125.11.100.23",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Osaka",
+        "city": "Sakai",
+        "asn": "AS9824",
+        "org": "JCOM Co., Ltd.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX",
+        "src": "pool"
+      },
+      "score": 64.1,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.0,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn302973296.opengw.net:1333",
+      "host": "vpn302973296.opengw.net:1333",
+      "connect_s": 6.44,
+      "detail": {
+        "ip": "61.82.162.106",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Seoul",
+        "city": "Seoul",
+        "asn": "AS4766",
+        "org": "Korea Telecom",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 67.9,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 12.0,
+        "uptime": 0.0,
+        "lat": 13.1,
+        "stable": 10.0,
+        "load": 1.9,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn414350235.opengw.net:1446",
+      "host": "vpn414350235.opengw.net:1446",
+      "connect_s": 6.44,
+      "detail": {
+        "ip": "14.56.110.143",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Gyeonggi-do",
+        "city": "Munsan",
+        "asn": "AS4766",
+        "org": "Korea Telecom",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 75.1,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.2,
+        "uptime": 0.0,
+        "lat": 12.9,
+        "stable": 10.0,
+        "load": 2.1,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn676945411.opengw.net:1236",
+      "host": "vpn676945411.opengw.net:1236",
+      "connect_s": 6.44,
+      "detail": {
+        "ip": "182.226.193.209",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Daejeon",
+        "city": "Daejeon",
+        "asn": "AS17858",
+        "org": "LG POWERCOMM",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 61.5,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 12.7,
+        "stable": 10.0,
+        "load": 1.4,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn717671506.opengw.net:1870",
+      "host": "vpn717671506.opengw.net:1870",
+      "connect_s": 6.44,
+      "detail": {
+        "ip": "113.145.237.167",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Okinawa",
+        "city": "Okinawa",
+        "asn": "AS2516",
+        "org": "KDDI CORPORATION",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX",
+        "src": "pool"
+      },
+      "score": 76.9,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.6,
+        "stable": 10.0,
+        "load": 2.4,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn109653562.opengw.net:1675",
+      "host": "vpn109653562.opengw.net:1675",
+      "connect_s": 6.44,
+      "detail": {
+        "ip": "144.91.151.96",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Hokkaido",
+        "city": "Asahikawa",
+        "asn": "AS131952",
+        "org": "Asahikawa Cable Television Co., Ltd.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 76.3,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.1,
+        "uptime": 0.0,
+        "lat": 13.6,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn514496438.opengw.net:995",
+      "host": "vpn514496438.opengw.net:995",
+      "connect_s": 6.44,
+      "detail": {
+        "ip": "1.236.29.27",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Gyeonggi-do",
+        "city": "Goyang-si",
+        "asn": "AS9318",
+        "org": "SK Broadband Co Ltd",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 76.6,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.8,
+        "uptime": 0.0,
+        "lat": 13.0,
+        "stable": 10.0,
+        "load": 2.9,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn890053288.opengw.net:995",
+      "host": "vpn890053288.opengw.net:995",
+      "connect_s": 6.44,
+      "detail": {
+        "ip": "14.45.163.241",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Gyeongsangbuk-do",
+        "city": "Yeongju",
+        "asn": "AS4766",
+        "org": "Korea Telecom",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 76.6,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.3,
+        "stable": 10.0,
+        "load": 2.4,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn152353045.opengw.net:1848",
+      "host": "vpn152353045.opengw.net:1848",
+      "connect_s": 6.45,
+      "detail": {
+        "ip": "211.200.79.121",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Seoul",
+        "city": "Seoul",
+        "asn": "AS9318",
+        "org": "SK Broadband Co Ltd",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 76.7,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.9,
+        "uptime": 0.0,
+        "lat": 13.0,
+        "stable": 10.0,
+        "load": 2.9,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn863787247.opengw.net:1575",
+      "host": "vpn863787247.opengw.net:1575",
+      "connect_s": 6.45,
+      "detail": {
+        "ip": "180.196.229.114",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Aichi",
+        "city": "Nagoya",
+        "asn": "AS18126",
+        "org": "Chubu Telecommunications Co.,Inc.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX",
+        "src": "pool"
+      },
+      "score": 77.9,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.3,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn922041785.opengw.net:1435",
+      "host": "vpn922041785.opengw.net:1435",
+      "connect_s": 6.45,
+      "detail": {
+        "ip": "121.189.231.253",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Gangwon-do",
+        "city": "Gangneung",
+        "asn": "AS4766",
+        "org": "KT",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 61.5,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 18.6,
+        "uptime": 0.0,
+        "lat": 13.0,
+        "stable": 10.0,
+        "load": 2.5,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@laud.opengw.net:443",
+      "host": "laud.opengw.net:443",
+      "connect_s": 6.45,
+      "detail": {
+        "ip": "187.15.134.130",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS137409",
+        "org": "Packethub Japan",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 50.1,
+      "score_parts": {
+        "house": 4.5,
+        "bw": 19.7,
+        "uptime": 0.0,
+        "lat": 14.3,
+        "stable": 10.0,
+        "load": 0.7,
+        "conn": 0.9,
+        "kind": "idc",
+        "uptime_days": 0.0
       }
     },
     {
@@ -1633,65 +2280,113 @@
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
+      },
+      "score": 55.8,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 13.7,
+        "uptime": 0.0,
+        "lat": 13.1,
+        "stable": 10.0,
+        "load": 1.6,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn164761694.opengw.net:1814",
-      "host": "vpn164761694.opengw.net:1814",
+      "sstp": "sstp://vpn:vpn@vpn146757892.opengw.net:1322",
+      "host": "vpn146757892.opengw.net:1322",
       "connect_s": 6.45,
       "detail": {
-        "ip": "80.115.95.115",
-        "country": "NL",
-        "countryName": "Netherlands",
-        "region": "Limburg",
-        "city": "Sittard",
-        "asn": "AS33915",
-        "org": "Ziggo Consumers",
-        "timezone": "Europe/Amsterdam",
-        "colo": "AMS",
+        "ip": "121.81.233.178",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Osaka",
+        "city": "Osaka",
+        "asn": "AS17511",
+        "org": "OPTAGE Inc.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX",
         "src": "pool"
+      },
+      "score": 77.6,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.1,
+        "uptime": 0.0,
+        "lat": 14.9,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn550964176.opengw.net:995",
-      "host": "vpn550964176.opengw.net:995",
+      "sstp": "sstp://vpn:vpn@vpn195786351.opengw.net:1629",
+      "host": "vpn195786351.opengw.net:1629",
       "connect_s": 6.45,
       "detail": {
-        "ip": "124.140.128.139",
+        "ip": "60.94.36.8",
         "country": "JP",
         "countryName": "Japan",
         "region": "Tokyo",
         "city": "Tokyo",
-        "asn": "AS9824",
-        "org": "JCOM Co., Ltd.",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
         "timezone": "Asia/Tokyo",
         "colo": "NRT",
         "src": "pool"
+      },
+      "score": 77.7,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.4,
+        "uptime": 0.0,
+        "lat": 14.6,
+        "stable": 10.0,
+        "load": 2.8,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn837675628.opengw.net:1980",
-      "host": "vpn837675628.opengw.net:1980",
+      "sstp": "sstp://vpn:vpn@vpn237073649.opengw.net:1507",
+      "host": "vpn237073649.opengw.net:1507",
       "connect_s": 6.45,
       "detail": {
-        "ip": "210.10.131.7",
-        "country": "AU",
-        "countryName": "Australia",
-        "region": "New South Wales",
-        "city": "Sydney",
-        "asn": "AS2764",
-        "org": "AAPT Limited",
-        "timezone": "Australia/Sydney",
-        "colo": "SYD",
+        "ip": "106.155.69.27",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Kanagawa",
+        "city": "Yokohama",
+        "asn": "AS2516",
+        "org": "KDDI CORPORATION",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
         "src": "pool"
+      },
+      "score": 78.3,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.7,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn564415042.opengw.net:1854",
-      "host": "vpn564415042.opengw.net:1854",
-      "connect_s": 6.46,
+      "sstp": "sstp://vpn:vpn@vpn561268334.opengw.net:1597",
+      "host": "vpn561268334.opengw.net:1597",
+      "connect_s": 6.45,
       "detail": {
-        "ip": "121.128.114.134",
+        "ip": "211.63.204.240",
         "country": "KR",
         "countryName": "South Korea",
         "region": "Seoul",
@@ -1701,12 +2396,198 @@
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
+      },
+      "score": 76.9,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.2,
+        "stable": 10.0,
+        "load": 2.8,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn639356368.opengw.net:1600",
+      "host": "vpn639356368.opengw.net:1600",
+      "connect_s": 6.45,
+      "detail": {
+        "ip": "175.210.238.10",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Gyeonggi-do",
+        "city": "Suwon",
+        "asn": "AS4766",
+        "org": "KT",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 63.0,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.1,
+        "stable": 10.0,
+        "load": 2.5,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn857468917.opengw.net:1535",
+      "host": "vpn857468917.opengw.net:1535",
+      "connect_s": 6.45,
+      "detail": {
+        "ip": "182.20.240.27",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Aichi",
+        "city": "Nagoya",
+        "asn": "AS10010",
+        "org": "TOKAI Communications Corporation",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 79.1,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.5,
+        "stable": 11.2,
+        "load": 2.5,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn482501676.opengw.net:1282",
+      "host": "vpn482501676.opengw.net:1282",
+      "connect_s": 6.45,
+      "detail": {
+        "ip": "126.122.153.76",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Gifu",
+        "city": "Gifu",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 78.0,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.6,
+        "stable": 11.2,
+        "load": 1.3,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn915688854.opengw.net:1929",
+      "host": "vpn915688854.opengw.net:1929",
+      "connect_s": 6.45,
+      "detail": {
+        "ip": "121.149.221.10",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Jeollanam-do",
+        "city": "Yeosu",
+        "asn": "AS4766",
+        "org": "Korea Telecom",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 75.1,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 18.3,
+        "uptime": 0.0,
+        "lat": 13.1,
+        "stable": 10.0,
+        "load": 2.8,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn545203829.opengw.net:995",
+      "host": "vpn545203829.opengw.net:995",
+      "connect_s": 6.45,
+      "detail": {
+        "ip": "211.37.90.166",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Gyeonggi-do",
+        "city": "Anyang-si",
+        "asn": "AS9318",
+        "org": "SK Broadband Co Ltd",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 76.8,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.0,
+        "stable": 10.0,
+        "load": 2.9,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn572913186.opengw.net:1609",
+      "host": "vpn572913186.opengw.net:1609",
+      "connect_s": 6.45,
+      "detail": {
+        "ip": "220.84.236.107",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Busan",
+        "city": "Busan",
+        "asn": "AS4766",
+        "org": "KT",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 63.7,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.4,
+        "stable": 10.0,
+        "load": 2.9,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
       }
     },
     {
       "sstp": "sstp://vpn:vpn@vpn669289757.opengw.net:995",
       "host": "vpn669289757.opengw.net:995",
-      "connect_s": 6.46,
+      "connect_s": 6.45,
       "detail": {
         "ip": "175.193.38.127",
         "country": "KR",
@@ -1718,6 +2599,366 @@
         "timezone": "Asia/Seoul",
         "colo": "ICN",
         "src": "pool"
+      },
+      "score": 57.3,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 13.9,
+        "uptime": 0.0,
+        "lat": 13.2,
+        "stable": 10.0,
+        "load": 2.8,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn953140495.opengw.net:995",
+      "host": "vpn953140495.opengw.net:995",
+      "connect_s": 6.45,
+      "detail": {
+        "ip": "175.195.243.160",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Gyeonggi-do",
+        "city": "Suwon",
+        "asn": "AS4766",
+        "org": "Korea Telecom",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 75.8,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.0,
+        "stable": 10.0,
+        "load": 1.9,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn100999266.opengw.net:1401",
+      "host": "vpn100999266.opengw.net:1401",
+      "connect_s": 6.46,
+      "detail": {
+        "ip": "222.14.54.111",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Okinawa",
+        "city": "Naha",
+        "asn": "AS2516",
+        "org": "DION (KDDI CORPORATION)",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX",
+        "src": "pool"
+      },
+      "score": 76.9,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.4,
+        "stable": 10.0,
+        "load": 2.6,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn333824249.opengw.net:995",
+      "host": "vpn333824249.opengw.net:995",
+      "connect_s": 6.46,
+      "detail": {
+        "ip": "106.250.211.111",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Seoul",
+        "city": "Seoul",
+        "asn": "AS3786",
+        "org": "LG DACOM Corporation",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 62.1,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 12.0,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn648577383.opengw.net:1805",
+      "host": "vpn648577383.opengw.net:1805",
+      "connect_s": 6.46,
+      "detail": {
+        "ip": "60.93.161.98",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS17676",
+        "org": "Japan Nation-wide Network of Softbank Corp.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 78.6,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.8,
+        "stable": 10.0,
+        "load": 2.9,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn771852693.opengw.net:1399",
+      "host": "vpn771852693.opengw.net:1399",
+      "connect_s": 6.46,
+      "detail": {
+        "ip": "211.208.128.33",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Incheon",
+        "city": "Incheon",
+        "asn": "AS9318",
+        "org": "SK Broadband Co Ltd",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 76.1,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 12.5,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn295573517.opengw.net:1660",
+      "host": "vpn295573517.opengw.net:1660",
+      "connect_s": 6.46,
+      "detail": {
+        "ip": "59.14.213.103",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Gyeonggi-do",
+        "city": "Ansan-si",
+        "asn": "AS4766",
+        "org": "Korea Telecom",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 71.7,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.1,
+        "stable": 5.0,
+        "load": 2.7,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn110532732.opengw.net:995",
+      "host": "vpn110532732.opengw.net:995",
+      "connect_s": 6.84,
+      "detail": {
+        "ip": "222.97.185.245",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Busan",
+        "city": "Busan",
+        "asn": "AS4766",
+        "org": "KT",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 62.8,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 13.3,
+        "stable": 10.0,
+        "load": 2.1,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn362823699.opengw.net:1436",
+      "host": "vpn362823699.opengw.net:1436",
+      "connect_s": 6.84,
+      "detail": {
+        "ip": "122.254.245.109",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Busan",
+        "city": "Busan",
+        "asn": "AS17857",
+        "org": "SK Broadband Co Ltd",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 75.8,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.8,
+        "uptime": 0.0,
+        "lat": 12.3,
+        "stable": 10.0,
+        "load": 2.8,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn350782353.opengw.net:1962",
+      "host": "vpn350782353.opengw.net:1962",
+      "connect_s": 6.85,
+      "detail": {
+        "ip": "116.64.86.146",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "asn": "AS9824",
+        "org": "JCOM Co., Ltd.",
+        "timezone": "Asia/Tokyo",
+        "colo": "NRT",
+        "src": "pool"
+      },
+      "score": 64.4,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.1,
+        "stable": 10.0,
+        "load": 2.9,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn586698509.opengw.net:1315",
+      "host": "vpn586698509.opengw.net:1315",
+      "connect_s": 6.85,
+      "detail": {
+        "ip": "49.250.0.186",
+        "country": "JP",
+        "countryName": "Japan",
+        "region": "Hyōgo",
+        "city": "Ashiya",
+        "asn": "AS9617",
+        "org": "JCOM Co., Ltd.",
+        "timezone": "Asia/Tokyo",
+        "colo": "KIX",
+        "src": "pool"
+      },
+      "score": 64.0,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 19.5,
+        "uptime": 0.0,
+        "lat": 14.4,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn837675628.opengw.net:1980",
+      "host": "vpn837675628.opengw.net:1980",
+      "connect_s": 6.86,
+      "detail": {
+        "ip": "210.10.131.7",
+        "country": "AU",
+        "countryName": "Australia",
+        "region": "New South Wales",
+        "city": "Sydney",
+        "asn": "AS2764",
+        "org": "AAPT Limited",
+        "timezone": "Australia/Sydney",
+        "colo": "SYD",
+        "src": "pool"
+      },
+      "score": 63.3,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 19.6,
+        "uptime": 0.0,
+        "lat": 14.2,
+        "stable": 10.0,
+        "load": 2.1,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn454753645.opengw.net:1838",
+      "host": "vpn454753645.opengw.net:1838",
+      "connect_s": 6.86,
+      "detail": {
+        "ip": "176.45.176.5",
+        "country": "SA",
+        "countryName": "Saudi Arabia",
+        "region": "Riyadh Region",
+        "city": "Riyadh",
+        "asn": "AS25019",
+        "org": "STC, Riyadh Residential Fixed-Broadband",
+        "timezone": "Asia/Riyadh",
+        "colo": "JED",
+        "src": "pool"
+      },
+      "score": 72.2,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 18.6,
+        "uptime": 0.0,
+        "lat": 9.7,
+        "stable": 10.0,
+        "load": 3.0,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
@@ -1735,23 +2976,105 @@
         "timezone": "Asia/Bangkok",
         "colo": "BKK",
         "src": "pool"
+      },
+      "score": 76.7,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 14.4,
+        "stable": 10.0,
+        "load": 1.4,
+        "conn": 0.9,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     },
     {
-      "sstp": "sstp://vpn:vpn@vpn454753645.opengw.net:1838",
-      "host": "vpn454753645.opengw.net:1838",
-      "connect_s": 7.25,
+      "sstp": "sstp://vpn:vpn@vpn464858989.opengw.net:995",
+      "host": "vpn464858989.opengw.net:995",
+      "connect_s": 6.86,
       "detail": {
-        "ip": "176.45.176.5",
-        "country": "SA",
-        "countryName": "Saudi Arabia",
-        "region": "Riyadh Region",
-        "city": "Riyadh",
-        "asn": "AS25019",
-        "org": "STC, Riyadh Residential Fixed-Broadband",
-        "timezone": "Asia/Riyadh",
-        "colo": "JED",
+        "ip": "171.235.180.176",
+        "country": "VN",
+        "countryName": "Vietnam",
+        "region": "Ho Chi Minh City (HCMC)",
+        "city": "Ho Chi Minh City",
+        "asn": "AS7552",
+        "org": "Viettel Group",
+        "timezone": "Asia/Ho_Chi_Minh",
+        "colo": "HKG",
         "src": "pool"
+      },
+      "score": 62.2,
+      "score_parts": {
+        "house": 16.5,
+        "bw": 20.0,
+        "uptime": 0.0,
+        "lat": 12.7,
+        "stable": 10.0,
+        "load": 2.1,
+        "conn": 0.9,
+        "kind": "unknown",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn693207949.opengw.net:1699",
+      "host": "vpn693207949.opengw.net:1699",
+      "connect_s": 7.26,
+      "detail": {
+        "ip": "85.28.222.160",
+        "country": "RU",
+        "countryName": "Russia",
+        "region": "Kamchatka",
+        "city": "Petropavlovsk-Kamchatsky",
+        "asn": "AS12389",
+        "org": "Far East Telecommunications Company",
+        "timezone": "Asia/Kamchatka",
+        "colo": "DME",
+        "src": "pool"
+      },
+      "score": 63.0,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.4,
+        "uptime": 0.0,
+        "lat": 5.6,
+        "stable": 5.0,
+        "load": 2.2,
+        "conn": 0.8,
+        "kind": "res",
+        "uptime_days": 0.0
+      }
+    },
+    {
+      "sstp": "sstp://vpn:vpn@vpn386579301.opengw.net:995",
+      "host": "vpn386579301.opengw.net:995",
+      "connect_s": 8.08,
+      "detail": {
+        "ip": "211.215.238.48",
+        "country": "KR",
+        "countryName": "South Korea",
+        "region": "Incheon",
+        "city": "Incheon",
+        "asn": "AS9318",
+        "org": "SK Broadband Co Ltd",
+        "timezone": "Asia/Seoul",
+        "colo": "ICN",
+        "src": "pool"
+      },
+      "score": 76.1,
+      "score_parts": {
+        "house": 30.0,
+        "bw": 19.7,
+        "uptime": 0.0,
+        "lat": 13.0,
+        "stable": 10.0,
+        "load": 2.7,
+        "conn": 0.7,
+        "kind": "res",
+        "uptime_days": 0.0
       }
     }
   ]
