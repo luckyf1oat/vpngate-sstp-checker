@@ -80,7 +80,7 @@ def main():
             pruned += 1
 
     # 硬上限：超过 250 台就按「曾经成功过 + 最近出现」保留
-    MAX_POOL = int(os.environ.get("MAX_POOL", "250"))
+    MAX_POOL = int(os.environ.get("MAX_POOL", "200"))
     if len(servers) > MAX_POOL:
         def rank_key(item):
             hp, rec = item
