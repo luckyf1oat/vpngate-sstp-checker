@@ -84,7 +84,8 @@ def main():
     if len(servers) > MAX_POOL:
         def rank_key(item):
             hp, rec = item
-            return (1 if (rec.get("ok_count") or 0) else 0, rec.get("last_seen") or "")
+            # 新鲜度优先（新见到的节点也能留下被测），成功历史只做次要权重
+            return (rec.get("last_seen") or "", 1 if (rec.get("ok_count") or 0) else 0)
         keep = dict(sorted(servers.items(), key=rank_key, reverse=True)[:MAX_POOL])
         pruned += len(servers) - len(keep)
         servers.clear()
@@ -103,7 +104,8 @@ def main():
 
     live = sum(1 for r in servers.values() if (r.get("last_seen") or "") >= (now[:13] + ":00:00Z"))
     lib.log(f"采集完成：本轮 API {len(api)} 台 / 页面 SSTP {len(ports)} 台；"
-            f"新增 {added}，剔除过期 {pruned}，库总 {len(servers)}（{before}→{len(servers)}），本轮在线 {live}")
+            f"新增 {added}，清理过期/超上限 {pruned}，库总 {len(servers)}（{before}→{len(servers)}），"
+            f"本轮刷新 {live} 台")
     return 0
 
 
