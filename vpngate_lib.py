@@ -74,6 +74,7 @@ def api_list():
             "ping": _int(r.get("Ping")) or 9999,
             "speed_mbps": round(_int(r.get("Speed")) * 8 / 1e6, 2),
             "sessions": _int(r.get("NumVpnSessions")),
+            "uptime_days": round(_int(r.get("Uptime")) / 86400000, 2),
         })
     return out
 

@@ -11,10 +11,15 @@
 import glob
 import json
 import os
+import sys
 import time
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import ranking  # noqa: E402
 
 OUT_TXT = "result.txt"
 OUT_JSON = "result.json"
+OUT_RANK = "result-ranked.txt"
 POOL_JSON = "sstpall.json"
 
 
@@ -40,6 +45,17 @@ def main():
             best[ip] = r
     results = sorted(best.values(), key=lambda x: x.get("connect_s", 99))
 
+    # 打分（需要库里的 带宽/在线时长/延迟/会话/成功失败次数）
+    try:
+        pool_servers = (json.load(open(POOL_JSON, encoding="utf-8")).get("servers") or {})
+    except Exception:
+        pool_servers = {}
+    for r in results:
+        hp = (r.get("host") or "").replace("sstp://vpn:vpn@", "")
+        total, parts = ranking.score_node(r.get("detail") or {}, pool_servers.get(hp) or {}, r.get("connect_s"))
+        r["score"] = total
+        r["score_parts"] = parts
+
     lines = [f"{r['sstp']}  {json.dumps(r['detail'], ensure_ascii=False, separators=(',', ':'))}"
              for r in results]
     with open(OUT_TXT, "w", encoding="utf-8") as f:
@@ -47,6 +63,17 @@ def main():
     with open(OUT_JSON, "w", encoding="utf-8") as f:
         json.dump({"updated_at": now_iso(), "tested": tested, "alive": len(results),
                    "results": results}, f, ensure_ascii=False, indent=2)
+
+    # 按评分排序的版本
+    ranked = sorted(results, key=lambda x: x.get("score", 0), reverse=True)
+    rlines = []
+    for r in ranked:
+        d = dict(r["detail"])
+        d["score"] = r.get("score")
+        d["score_parts"] = r.get("score_parts")
+        rlines.append(f"{r['sstp']}  {json.dumps(d, ensure_ascii=False, separators=(',', ':'))}")
+    with open(OUT_RANK, "w", encoding="utf-8") as f:
+        f.write("\n".join(rlines) + ("\n" if rlines else ""))
 
     # 合并库状态
     try:

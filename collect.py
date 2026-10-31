@@ -48,6 +48,7 @@ def main():
                 "ping": s["ping"],
                 "speed_mbps": s["speed_mbps"],
                 "sessions": s["sessions"],
+                "uptime_days": s.get("uptime_days", 0),
                 "first_seen": now,
                 "last_seen": now,
                 "last_checked": None,
@@ -57,8 +58,8 @@ def main():
             }
             added += 1
         else:
-            rec.update(country=s["country"], ping=s["ping"],
-                       speed_mbps=s["speed_mbps"], sessions=s["sessions"], last_seen=now)
+            rec.update(country=s["country"], ping=s["ping"], speed_mbps=s["speed_mbps"],
+                       sessions=s["sessions"], uptime_days=s.get("uptime_days", 0), last_seen=now)
 
     pool["updated_at"] = now
     pool["api_seen"] = len(api)
