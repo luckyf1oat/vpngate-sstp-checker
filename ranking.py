@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 import math
+import re
 
 # 机房/云/代理厂商关键词 —— 命中判 IDC
 HOSTING = (
@@ -25,7 +26,13 @@ ISP_HINTS = (
     "vodafone", "telefonica", "singtel", "hinet", "chunghwa", "kt corp", "korea telecom",
     "sk broadband", "lg u+", "skb", "nuro", "sonet", "so-net", "optic", "optage",
     "tokai", "chubu", "cable net", "network", "net service", "isp",
+    "ntt", "kddi", "biglobe", "plala", "ocn", "docomo", "telstra", "optus",
+    "korea telecom", "sk telecom", "lg uplus", "hinet", "chunghwa", "seednet",
 )
+
+
+# 短词必须词边界匹配，否则 "kt" 会误伤别的词
+ISP_SHORT = ("kt", "sk", "lg", "ntt", "au", "ocn", "plala", "biglobe")
 
 
 def classify(org: str, asn_label: str = "") -> str:
@@ -37,6 +44,9 @@ def classify(org: str, asn_label: str = "") -> str:
         return "idc"
     if any(k in s for k in ISP_HINTS):
         return "res"
+    for tok in ISP_SHORT:
+        if re.search(r"\b" + tok + r"\b", s):
+            return "res"
     return "unknown"
 
 
