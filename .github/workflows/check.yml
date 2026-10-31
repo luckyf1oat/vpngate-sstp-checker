@@ -1,0 +1,74 @@
+name: vpngate-sstp-check
+
+on:
+  schedule:
+    # 每 2 小时一次（UTC 偶数点）
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "本轮最多测试几台"
+        required: false
+        default: "40"
+      max_ping:
+        description: "只测 vpngate 自报 ping <= 该值"
+        required: false
+        default: "400"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vpngate-sstp-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 安装 sstp-client / ppp
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq sstp-client ppp curl iproute2 python3
+          sstpc --help 2>&1 | head -2
+          pppd --version 2>&1 | head -1
+
+      - name: 加载 ppp 内核模块
+        run: |
+          sudo modprobe ppp_generic || true
+          sudo modprobe ppp_async || true
+          lsmod | grep -E '^ppp' || echo "警告: 没有 ppp 模块，SSTP 可能起不来"
+
+      - name: 跑测试
+        env:
+          LIMIT: ${{ github.event.inputs.limit || '40' }}
+          MAX_PING: ${{ github.event.inputs.max_ping || '400' }}
+          CONNECT_TIMEOUT: "15"
+          FETCH_TIMEOUT: "12"
+        run: |
+          sudo -E env "PATH=$PATH" python3 checker.py
+
+      - name: 提交结果
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add result.txt result.json
+          if git diff --cached --quiet; then
+            echo "结果无变化，跳过提交"
+          else
+            git commit -m "chore: vpngate sstp result $(date -u +%FT%TZ) [skip ci]"
+            git push
+          fi
+
+      - name: 上传 artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sstp-result
+          path: |
+            result.txt
+            result.json
+          if-no-files-found: warn
