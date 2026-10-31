@@ -25,7 +25,7 @@ from urllib.parse import urlparse
 
 SITE = os.environ.get("VPNGATE_URL", "https://www.vpngate.net/cn/")
 IPAPI = os.environ.get("IPAPI_URL", "https://ip.5671234.xyz/json/")
-LIMIT = int(os.environ.get("LIMIT", "40"))
+LIMIT = int(os.environ.get("LIMIT", "100"))
 MAX_PING = int(os.environ.get("MAX_PING", "400"))
 CONNECT_TIMEOUT = int(os.environ.get("CONNECT_TIMEOUT", "15"))
 FETCH_TIMEOUT = int(os.environ.get("FETCH_TIMEOUT", "12"))

@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "本轮最多测试几台"
+        description: "本轮最多测试几台（0=全部）"
         required: false
-        default: "40"
+        default: "100"
       max_ping:
         description: "只测 vpngate 自报 ping <= 该值"
         required: false
@@ -44,7 +44,7 @@ jobs:
 
       - name: 跑测试
         env:
-          LIMIT: ${{ inputs.limit || github.event.inputs.limit || '40' }}
+          LIMIT: ${{ inputs.limit || github.event.inputs.limit || '100' }}
           MAX_PING: ${{ inputs.max_ping || github.event.inputs.max_ping || '400' }}
           CONNECT_TIMEOUT: "15"
           FETCH_TIMEOUT: "12"
