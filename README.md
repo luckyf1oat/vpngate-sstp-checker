@@ -110,3 +110,20 @@ sudo apt-get install -y sstp-client ppp curl
 python3 collect.py                       # 只采集，不起隧道
 sudo -E env "PATH=$PATH" python3 check.py  # 实测（本机有 ppp0 时用 netns）
 ```
+
+## 触发方式（2026-11-01 起：全部由 Cloudflare Worker 负责）
+
+GitHub 自带的 `schedule` 已从两个 workflow 中移除——实测它会被延迟甚至整段丢弃（曾停 5 小时）。
+
+现在唯一的触发源是 Cloudflare Worker `vpngate-cron`：
+
+```
+cron  */10 * * * *   (UTC，每 10 分钟检查一次)
+      ├─ 有 queued / in_progress → 跳过（不叠加）
+      ├─ collect 上次 > 75 分钟  → POST workflow_dispatch collect.yml
+      └─ check   上次 > 150 分钟 → POST workflow_dispatch check.yml
+```
+
+- 手动触发：`GET https://sstp.5671234.xyz/api/run?key=<ADMIN_KEY>&wf=check.yml`
+- 实时面板：`https://sstp.5671234.xyz/`（读 result.json，按评分排序，不存历史）
+- 两个 workflow 共用 `concurrency: group: vpngate-repo`，不会并发写仓库
