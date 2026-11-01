@@ -3,7 +3,7 @@ name: vpngate-sstp-check
 on:
   schedule:
     # 每 2 小时测一轮（整点采集后 30 分钟）
-    - cron: "30 */2 * * *"
+    - cron: "43 */2 * * *"
   workflow_dispatch:
     inputs:
       concurrency:

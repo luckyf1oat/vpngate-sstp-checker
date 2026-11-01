@@ -3,7 +3,7 @@ name: vpngate-sstp-collect
 on:
   schedule:
     # 每小时采集一次，把当前可见的 SSTP 服务器并进 sstpall.txt
-    - cron: "5 * * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
