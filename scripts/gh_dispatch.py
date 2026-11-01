@@ -69,6 +69,12 @@ def main():
         print("runs api fail", st, d); return 1
     runs = d.get("workflow_runs", []) if isinstance(d, dict) else []
     now = time.time()
+    # 两个 workflow 共用 concurrency group，只要有一个在跑就整体等待
+    global_busy = [r for r in runs if r.get("path", "").endswith(("collect.yml", "check.yml"))
+                   and r.get("status") in ("queued", "in_progress")]
+    if global_busy:
+        print(f"[跳过] 仓库已有任务在跑: {global_busy[0]['name']} ({global_busy[0]['status']})")
+        return 0
     acted = 0
     for path, max_age, name in RULES:
         mine = [r for r in runs if r.get("path") == path]
