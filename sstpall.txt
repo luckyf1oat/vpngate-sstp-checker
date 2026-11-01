@@ -1,9 +1,10 @@
-sstp://vpn:vpn@jayporeonvpn01.opengw.net:443
 sstp://vpn:vpn@laud.opengw.net:443
+sstp://vpn:vpn@opengw.opengw.net:443
 sstp://vpn:vpn@public-vpn-0.opengw.net:443
 sstp://vpn:vpn@public-vpn-100.opengw.net:443
 sstp://vpn:vpn@public-vpn-102.opengw.net:443
 sstp://vpn:vpn@public-vpn-105.opengw.net:443
+sstp://vpn:vpn@public-vpn-108.opengw.net:443
 sstp://vpn:vpn@public-vpn-111.opengw.net:443
 sstp://vpn:vpn@public-vpn-113.opengw.net:443
 sstp://vpn:vpn@public-vpn-114.opengw.net:443
@@ -37,6 +38,7 @@ sstp://vpn:vpn@public-vpn-155.opengw.net:443
 sstp://vpn:vpn@public-vpn-156.opengw.net:443
 sstp://vpn:vpn@public-vpn-157.opengw.net:443
 sstp://vpn:vpn@public-vpn-161.opengw.net:443
+sstp://vpn:vpn@public-vpn-162.opengw.net:443
 sstp://vpn:vpn@public-vpn-164.opengw.net:443
 sstp://vpn:vpn@public-vpn-165.opengw.net:443
 sstp://vpn:vpn@public-vpn-182.opengw.net:443
@@ -92,6 +94,7 @@ sstp://vpn:vpn@public-vpn-261.opengw.net:443
 sstp://vpn:vpn@public-vpn-38.opengw.net:443
 sstp://vpn:vpn@public-vpn-39.opengw.net:443
 sstp://vpn:vpn@public-vpn-40.opengw.net:443
+sstp://vpn:vpn@public-vpn-42.opengw.net:443
 sstp://vpn:vpn@public-vpn-45.opengw.net:443
 sstp://vpn:vpn@public-vpn-47.opengw.net:443
 sstp://vpn:vpn@public-vpn-48.opengw.net:443
@@ -100,6 +103,7 @@ sstp://vpn:vpn@public-vpn-50.opengw.net:443
 sstp://vpn:vpn@public-vpn-51.opengw.net:443
 sstp://vpn:vpn@public-vpn-52.opengw.net:443
 sstp://vpn:vpn@public-vpn-53.opengw.net:443
+sstp://vpn:vpn@public-vpn-54.opengw.net:443
 sstp://vpn:vpn@public-vpn-57.opengw.net:443
 sstp://vpn:vpn@public-vpn-61.opengw.net:443
 sstp://vpn:vpn@public-vpn-64.opengw.net:443
