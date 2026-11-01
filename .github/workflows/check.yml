@@ -1,9 +1,8 @@
 name: vpngate-sstp-check
 
 on:
-  schedule:
-    # 每 2 小时测一轮（整点采集后 30 分钟）
-    - cron: "43 */2 * * *"
+  # 触发统一由 Cloudflare Worker (vpngate-cron) 调 workflow_dispatch 负责
+  # 已移除 GitHub 自带 schedule：它常被延迟/丢弃（实测停过 5 小时）
   workflow_dispatch:
     inputs:
       concurrency:

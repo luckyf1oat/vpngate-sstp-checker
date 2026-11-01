@@ -1,9 +1,8 @@
 name: vpngate-sstp-collect
 
 on:
-  schedule:
-    # 每小时采集一次，把当前可见的 SSTP 服务器并进 sstpall.txt
-    - cron: "17 * * * *"
+  # 触发统一由 Cloudflare Worker (vpngate-cron) 调 workflow_dispatch 负责
+  # 已移除 GitHub 自带 schedule：它常被延迟/丢弃
   workflow_dispatch:
 
 permissions:
