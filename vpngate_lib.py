@@ -41,10 +41,21 @@ def run(cmd, timeout=10):
         return subprocess.CompletedProcess(cmd, 1, "", str(e))
 
 
-def http_get(url: str, timeout: int = 30) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Cache-Control": "no-cache"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", "replace")
+def http_get(url: str, timeout: int = 30, retries: int = 3) -> str:
+    """带重试的 GET：VPN Gate 偶发读超时，单次失败不该让整轮 run 挂掉"""
+    last = None
+    for i in range(max(1, retries)):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Cache-Control": "no-cache"})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read().decode("utf-8", "replace")
+        except Exception as e:  # noqa: BLE001
+            last = e
+            if i < retries - 1:
+                wait = 3 * (i + 1)
+                log(f"  [warn] GET 失败({type(e).__name__}: {e})，{wait}s 后第 {i + 2}/{retries} 次重试")
+                time.sleep(wait)
+    raise last  # type: ignore[misc]
 
 
 def _int(v):
