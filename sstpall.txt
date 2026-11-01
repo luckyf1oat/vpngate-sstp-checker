@@ -1,4 +1,5 @@
 sstp://vpn:vpn@jayporeonvpn01.opengw.net:443
+sstp://vpn:vpn@laud.opengw.net:443
 sstp://vpn:vpn@public-vpn-0.opengw.net:443
 sstp://vpn:vpn@public-vpn-100.opengw.net:443
 sstp://vpn:vpn@public-vpn-102.opengw.net:443
