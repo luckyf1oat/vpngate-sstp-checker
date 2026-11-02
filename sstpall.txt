@@ -1,5 +1,3 @@
-sstp://vpn:vpn@laud.opengw.net:443
-sstp://vpn:vpn@opengw.opengw.net:443
 sstp://vpn:vpn@public-vpn-0.opengw.net:443
 sstp://vpn:vpn@public-vpn-100.opengw.net:443
 sstp://vpn:vpn@public-vpn-102.opengw.net:443
@@ -74,7 +72,6 @@ sstp://vpn:vpn@public-vpn-205.opengw.net:443
 sstp://vpn:vpn@public-vpn-206.opengw.net:443
 sstp://vpn:vpn@public-vpn-207.opengw.net:443
 sstp://vpn:vpn@public-vpn-208.opengw.net:443
-sstp://vpn:vpn@public-vpn-209.opengw.net:443
 sstp://vpn:vpn@public-vpn-210.opengw.net:443
 sstp://vpn:vpn@public-vpn-211.opengw.net:443
 sstp://vpn:vpn@public-vpn-213.opengw.net:443
