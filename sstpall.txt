@@ -1,5 +1,5 @@
-sstp://vpn:vpn@intranet-bpkskaboki.opengw.net:443
-sstp://vpn:vpn@laud.opengw.net:443
+sstp://vpn:vpn@cetsssa.opengw.net:992
+sstp://vpn:vpn@opengw.opengw.net:443
 sstp://vpn:vpn@public-vpn-0.opengw.net:443
 sstp://vpn:vpn@public-vpn-100.opengw.net:443
 sstp://vpn:vpn@public-vpn-102.opengw.net:443
@@ -161,7 +161,6 @@ sstp://vpn:vpn@public-vpn-94.opengw.net:443
 sstp://vpn:vpn@public-vpn-95.opengw.net:443
 sstp://vpn:vpn@public-vpn-97.opengw.net:443
 sstp://vpn:vpn@public-vpn-98.opengw.net:443
-sstp://vpn:vpn@shooran.opengw.net:443
 sstp://vpn:vpn@vpn100135786.opengw.net:1845
 sstp://vpn:vpn@vpn100779275.opengw.net:995
 sstp://vpn:vpn@vpn100999266.opengw.net:1401
@@ -525,7 +524,6 @@ sstp://vpn:vpn@vpn215249031.opengw.net:995
 sstp://vpn:vpn@vpn215697364.opengw.net:1663
 sstp://vpn:vpn@vpn215791012.opengw.net:1274
 sstp://vpn:vpn@vpn216769734.opengw.net:995
-sstp://vpn:vpn@vpn217152916.opengw.net:1417
 sstp://vpn:vpn@vpn217330954.opengw.net:1871
 sstp://vpn:vpn@vpn217360140.opengw.net:1823
 sstp://vpn:vpn@vpn217660757.opengw.net:1521
@@ -561,7 +559,6 @@ sstp://vpn:vpn@vpn227967846.opengw.net:1414
 sstp://vpn:vpn@vpn228273615.opengw.net:1454
 sstp://vpn:vpn@vpn228479212.opengw.net:1665
 sstp://vpn:vpn@vpn229556497.opengw.net:995
-sstp://vpn:vpn@vpn229642564.opengw.net:1248
 sstp://vpn:vpn@vpn230024862.opengw.net:995
 sstp://vpn:vpn@vpn230180028.opengw.net:1852
 sstp://vpn:vpn@vpn230461081.opengw.net:1566
@@ -586,7 +583,6 @@ sstp://vpn:vpn@vpn236606284.opengw.net:1508
 sstp://vpn:vpn@vpn237071145.opengw.net:1726
 sstp://vpn:vpn@vpn237073649.opengw.net:1507
 sstp://vpn:vpn@vpn237175431.opengw.net:1877
-sstp://vpn:vpn@vpn237315390.opengw.net:1752
 sstp://vpn:vpn@vpn237445464.opengw.net:1324
 sstp://vpn:vpn@vpn237755744.opengw.net:995
 sstp://vpn:vpn@vpn238347140.opengw.net:995
@@ -890,7 +886,6 @@ sstp://vpn:vpn@vpn338706179.opengw.net:995
 sstp://vpn:vpn@vpn339013576.opengw.net:1397
 sstp://vpn:vpn@vpn339081424.opengw.net:1774
 sstp://vpn:vpn@vpn339249930.opengw.net:1484
-sstp://vpn:vpn@vpn340335758.opengw.net:1774
 sstp://vpn:vpn@vpn340461114.opengw.net:1994
 sstp://vpn:vpn@vpn340560924.opengw.net:1869
 sstp://vpn:vpn@vpn340873751.opengw.net:1946
@@ -1187,7 +1182,6 @@ sstp://vpn:vpn@vpn446015046.opengw.net:1755
 sstp://vpn:vpn@vpn446279611.opengw.net:1779
 sstp://vpn:vpn@vpn447441184.opengw.net:995
 sstp://vpn:vpn@vpn447519403.opengw.net:995
-sstp://vpn:vpn@vpn448073614.opengw.net:1751
 sstp://vpn:vpn@vpn448129650.opengw.net:1625
 sstp://vpn:vpn@vpn448703642.opengw.net:1209
 sstp://vpn:vpn@vpn449615132.opengw.net:1618
@@ -1197,7 +1191,6 @@ sstp://vpn:vpn@vpn450929320.opengw.net:1940
 sstp://vpn:vpn@vpn451071809.opengw.net:1940
 sstp://vpn:vpn@vpn451268085.opengw.net:1731
 sstp://vpn:vpn@vpn451643961.opengw.net:995
-sstp://vpn:vpn@vpn451666403.opengw.net:1928
 sstp://vpn:vpn@vpn452756080.opengw.net:1311
 sstp://vpn:vpn@vpn452770408.opengw.net:1365
 sstp://vpn:vpn@vpn453085161.opengw.net:443
@@ -1298,7 +1291,6 @@ sstp://vpn:vpn@vpn484185679.opengw.net:1917
 sstp://vpn:vpn@vpn484776697.opengw.net:995
 sstp://vpn:vpn@vpn484862665.opengw.net:995
 sstp://vpn:vpn@vpn485841128.opengw.net:995
-sstp://vpn:vpn@vpn486404568.opengw.net:1595
 sstp://vpn:vpn@vpn486662942.opengw.net:1730
 sstp://vpn:vpn@vpn487120861.opengw.net:995
 sstp://vpn:vpn@vpn487233765.opengw.net:1784
@@ -1385,7 +1377,6 @@ sstp://vpn:vpn@vpn522045270.opengw.net:995
 sstp://vpn:vpn@vpn522097296.opengw.net:1781
 sstp://vpn:vpn@vpn522940692.opengw.net:1351
 sstp://vpn:vpn@vpn523361413.opengw.net:1752
-sstp://vpn:vpn@vpn524865191.opengw.net:1932
 sstp://vpn:vpn@vpn525363020.opengw.net:1812
 sstp://vpn:vpn@vpn525530565.opengw.net:1282
 sstp://vpn:vpn@vpn526062445.opengw.net:1999
@@ -1476,7 +1467,6 @@ sstp://vpn:vpn@vpn556067728.opengw.net:1510
 sstp://vpn:vpn@vpn556108657.opengw.net:1702
 sstp://vpn:vpn@vpn556220504.opengw.net:1964
 sstp://vpn:vpn@vpn556509387.opengw.net:1412
-sstp://vpn:vpn@vpn556573101.opengw.net:995
 sstp://vpn:vpn@vpn557102870.opengw.net:1706
 sstp://vpn:vpn@vpn557183112.opengw.net:995
 sstp://vpn:vpn@vpn557835489.opengw.net:1717
@@ -1551,7 +1541,6 @@ sstp://vpn:vpn@vpn577907040.opengw.net:995
 sstp://vpn:vpn@vpn577920298.opengw.net:1955
 sstp://vpn:vpn@vpn578034962.opengw.net:1702
 sstp://vpn:vpn@vpn578249570.opengw.net:1776
-sstp://vpn:vpn@vpn578518022.opengw.net:995
 sstp://vpn:vpn@vpn578520844.opengw.net:1444
 sstp://vpn:vpn@vpn578671283.opengw.net:1833
 sstp://vpn:vpn@vpn579014654.opengw.net:1411
@@ -1668,7 +1657,6 @@ sstp://vpn:vpn@vpn609476505.opengw.net:1453
 sstp://vpn:vpn@vpn609687003.opengw.net:1355
 sstp://vpn:vpn@vpn610033625.opengw.net:995
 sstp://vpn:vpn@vpn610299405.opengw.net:995
-sstp://vpn:vpn@vpn610730061.opengw.net:1254
 sstp://vpn:vpn@vpn610812005.opengw.net:995
 sstp://vpn:vpn@vpn610920689.opengw.net:1506
 sstp://vpn:vpn@vpn610990463.opengw.net:1400
@@ -1691,14 +1679,12 @@ sstp://vpn:vpn@vpn616200329.opengw.net:995
 sstp://vpn:vpn@vpn616325763.opengw.net:995
 sstp://vpn:vpn@vpn617101521.opengw.net:1559
 sstp://vpn:vpn@vpn617491321.opengw.net:1931
-sstp://vpn:vpn@vpn617762926.opengw.net:995
 sstp://vpn:vpn@vpn618527739.opengw.net:995
 sstp://vpn:vpn@vpn618720077.opengw.net:1841
 sstp://vpn:vpn@vpn618806843.opengw.net:995
 sstp://vpn:vpn@vpn619352566.opengw.net:1498
 sstp://vpn:vpn@vpn620191377.opengw.net:1996
 sstp://vpn:vpn@vpn620928611.opengw.net:1642
-sstp://vpn:vpn@vpn621156147.opengw.net:1477
 sstp://vpn:vpn@vpn622119579.opengw.net:1716
 sstp://vpn:vpn@vpn622329260.opengw.net:1886
 sstp://vpn:vpn@vpn622613092.opengw.net:1496
@@ -1733,7 +1719,6 @@ sstp://vpn:vpn@vpn632205453.opengw.net:1771
 sstp://vpn:vpn@vpn632254640.opengw.net:1822
 sstp://vpn:vpn@vpn632703705.opengw.net:1787
 sstp://vpn:vpn@vpn634109661.opengw.net:1284
-sstp://vpn:vpn@vpn634383280.opengw.net:1948
 sstp://vpn:vpn@vpn635611297.opengw.net:995
 sstp://vpn:vpn@vpn635897011.opengw.net:995
 sstp://vpn:vpn@vpn635994349.opengw.net:1925
@@ -1952,7 +1937,6 @@ sstp://vpn:vpn@vpn710136103.opengw.net:995
 sstp://vpn:vpn@vpn710141337.opengw.net:1289
 sstp://vpn:vpn@vpn710637381.opengw.net:1267
 sstp://vpn:vpn@vpn711007877.opengw.net:1735
-sstp://vpn:vpn@vpn711468196.opengw.net:1524
 sstp://vpn:vpn@vpn711502318.opengw.net:995
 sstp://vpn:vpn@vpn711658835.opengw.net:995
 sstp://vpn:vpn@vpn711674780.opengw.net:1603
@@ -2162,7 +2146,6 @@ sstp://vpn:vpn@vpn784091044.opengw.net:1876
 sstp://vpn:vpn@vpn785696764.opengw.net:1465
 sstp://vpn:vpn@vpn786058985.opengw.net:1308
 sstp://vpn:vpn@vpn786391464.opengw.net:995
-sstp://vpn:vpn@vpn786486028.opengw.net:1550
 sstp://vpn:vpn@vpn787666886.opengw.net:1909
 sstp://vpn:vpn@vpn787695267.opengw.net:1656
 sstp://vpn:vpn@vpn788502559.opengw.net:1908
@@ -2187,7 +2170,6 @@ sstp://vpn:vpn@vpn798019705.opengw.net:995
 sstp://vpn:vpn@vpn798554514.opengw.net:1666
 sstp://vpn:vpn@vpn798556933.opengw.net:1643
 sstp://vpn:vpn@vpn798588716.opengw.net:995
-sstp://vpn:vpn@vpn798920299.opengw.net:1765
 sstp://vpn:vpn@vpn799563755.opengw.net:1864
 sstp://vpn:vpn@vpn799731089.opengw.net:995
 sstp://vpn:vpn@vpn799794865.opengw.net:1919
@@ -2276,7 +2258,6 @@ sstp://vpn:vpn@vpn821452484.opengw.net:1222
 sstp://vpn:vpn@vpn821500723.opengw.net:1276
 sstp://vpn:vpn@vpn821731215.opengw.net:1483
 sstp://vpn:vpn@vpn822284802.opengw.net:1828
-sstp://vpn:vpn@vpn822636741.opengw.net:1711
 sstp://vpn:vpn@vpn822869996.opengw.net:1554
 sstp://vpn:vpn@vpn823032627.opengw.net:1376
 sstp://vpn:vpn@vpn824185996.opengw.net:1819
@@ -2313,7 +2294,6 @@ sstp://vpn:vpn@vpn836545670.opengw.net:1910
 sstp://vpn:vpn@vpn837084482.opengw.net:1753
 sstp://vpn:vpn@vpn837092144.opengw.net:1485
 sstp://vpn:vpn@vpn837154869.opengw.net:1325
-sstp://vpn:vpn@vpn837269740.opengw.net:995
 sstp://vpn:vpn@vpn837518130.opengw.net:995
 sstp://vpn:vpn@vpn837675628.opengw.net:1980
 sstp://vpn:vpn@vpn837693710.opengw.net:1460
@@ -2558,7 +2538,6 @@ sstp://vpn:vpn@vpn911800374.opengw.net:1807
 sstp://vpn:vpn@vpn912307754.opengw.net:1209
 sstp://vpn:vpn@vpn912920644.opengw.net:995
 sstp://vpn:vpn@vpn913230858.opengw.net:1326
-sstp://vpn:vpn@vpn913413223.opengw.net:1888
 sstp://vpn:vpn@vpn913874430.opengw.net:995
 sstp://vpn:vpn@vpn913900012.opengw.net:1817
 sstp://vpn:vpn@vpn914058380.opengw.net:1296
