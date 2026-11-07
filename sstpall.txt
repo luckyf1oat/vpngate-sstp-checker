@@ -1,4 +1,3 @@
-sstp://vpn:vpn@cetsssa.opengw.net:992
 sstp://vpn:vpn@opengw.opengw.net:443
 sstp://vpn:vpn@public-vpn-0.opengw.net:443
 sstp://vpn:vpn@public-vpn-100.opengw.net:443
